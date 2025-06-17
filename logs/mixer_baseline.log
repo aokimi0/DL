@@ -1,0 +1,1320 @@
+Running MLP-Mixer Experiment
+Using device: cuda
+Experiment Name: baseline
+Running MLP-Mixer Experiment
+Using device: cuda
+Experiment Name: baseline
+Running MLP-Mixer Experiment
+Using device: cuda
+Experiment Name: baseline
+Running MLP-Mixer Experiment
+Using device: cuda
+Experiment Name: baseline
+Running MLP-Mixer Experiment
+Using device: cuda
+Experiment Name: baseline
+Running MLP-Mixer Experiment
+Using device: cuda
+Experiment Name: baseline
+Running MLP-Mixer Experiment
+Using device: cuda
+Experiment Name: baseline
+Model Architecture:
+MlpMixer(
+  (patch_embed): Sequential(
+    (0): Conv2d(1, 128, kernel_size=(4, 4), stride=(4, 4))
+    (1): Rearrange('b c h w -> b (h w) c')
+  )
+  (mixer_blocks): Sequential(
+    (0): MixerBlock(
+      (token_mix): Sequential(
+        (0): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (1): Rearrange('b n d -> b d n')
+        (2): MlpBlock(
+          (fc1): Linear(in_features=49, out_features=64, bias=True)
+          (act): GELU(approximate='none')
+          (fc2): Linear(in_features=64, out_features=49, bias=True)
+        )
+        (3): Rearrange('b d n -> b n d')
+      )
+      (channel_mix): Sequential(
+        (0): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (1): MlpBlock(
+          (fc1): Linear(in_features=128, out_features=256, bias=True)
+          (act): GELU(approximate='none')
+          (fc2): Linear(in_features=256, out_features=128, bias=True)
+        )
+      )
+    )
+    (1): MixerBlock(
+      (token_mix): Sequential(
+        (0): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (1): Rearrange('b n d -> b d n')
+        (2): MlpBlock(
+          (fc1): Linear(in_features=49, out_features=64, bias=True)
+          (act): GELU(approximate='none')
+          (fc2): Linear(in_features=64, out_features=49, bias=True)
+        )
+        (3): Rearrange('b d n -> b n d')
+      )
+      (channel_mix): Sequential(
+        (0): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (1): MlpBlock(
+          (fc1): Linear(in_features=128, out_features=256, bias=True)
+          (act): GELU(approximate='none')
+          (fc2): Linear(in_features=256, out_features=128, bias=True)
+        )
+      )
+    )
+    (2): MixerBlock(
+      (token_mix): Sequential(
+        (0): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (1): Rearrange('b n d -> b d n')
+        (2): MlpBlock(
+          (fc1): Linear(in_features=49, out_features=64, bias=True)
+          (act): GELU(approximate='none')
+          (fc2): Linear(in_features=64, out_features=49, bias=True)
+        )
+        (3): Rearrange('b d n -> b n d')
+      )
+      (channel_mix): Sequential(
+        (0): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (1): MlpBlock(
+          (fc1): Linear(in_features=128, out_features=256, bias=True)
+          (act): GELU(approximate='none')
+          (fc2): Linear(in_features=256, out_features=128, bias=True)
+        )
+      )
+    )
+    (3): MixerBlock(
+      (token_mix): Sequential(
+        (0): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (1): Rearrange('b n d -> b d n')
+        (2): MlpBlock(
+          (fc1): Linear(in_features=49, out_features=64, bias=True)
+          (act): GELU(approximate='none')
+          (fc2): Linear(in_features=64, out_features=49, bias=True)
+        )
+        (3): Rearrange('b d n -> b n d')
+      )
+      (channel_mix): Sequential(
+        (0): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (1): MlpBlock(
+          (fc1): Linear(in_features=128, out_features=256, bias=True)
+          (act): GELU(approximate='none')
+          (fc2): Linear(in_features=256, out_features=128, bias=True)
+        )
+      )
+    )
+  )
+  (layer_norm): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+  (classifier): Linear(in_features=128, out_features=10, bias=True)
+)
+Model Architecture:
+MlpMixer(
+  (patch_embed): Sequential(
+    (0): Conv2d(1, 128, kernel_size=(4, 4), stride=(4, 4))
+    (1): Rearrange('b c h w -> b (h w) c')
+  )
+  (mixer_blocks): Sequential(
+    (0): MixerBlock(
+      (token_mix): Sequential(
+        (0): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (1): Rearrange('b n d -> b d n')
+        (2): MlpBlock(
+          (fc1): Linear(in_features=49, out_features=64, bias=True)
+          (act): GELU(approximate='none')
+          (fc2): Linear(in_features=64, out_features=49, bias=True)
+        )
+        (3): Rearrange('b d n -> b n d')
+      )
+      (channel_mix): Sequential(
+        (0): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (1): MlpBlock(
+          (fc1): Linear(in_features=128, out_features=256, bias=True)
+          (act): GELU(approximate='none')
+          (fc2): Linear(in_features=256, out_features=128, bias=True)
+        )
+      )
+    )
+    (1): MixerBlock(
+      (token_mix): Sequential(
+        (0): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (1): Rearrange('b n d -> b d n')
+        (2): MlpBlock(
+          (fc1): Linear(in_features=49, out_features=64, bias=True)
+          (act): GELU(approximate='none')
+          (fc2): Linear(in_features=64, out_features=49, bias=True)
+        )
+        (3): Rearrange('b d n -> b n d')
+      )
+      (channel_mix): Sequential(
+        (0): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (1): MlpBlock(
+          (fc1): Linear(in_features=128, out_features=256, bias=True)
+          (act): GELU(approximate='none')
+          (fc2): Linear(in_features=256, out_features=128, bias=True)
+        )
+      )
+    )
+    (2): MixerBlock(
+      (token_mix): Sequential(
+        (0): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (1): Rearrange('b n d -> b d n')
+        (2): MlpBlock(
+          (fc1): Linear(in_features=49, out_features=64, bias=True)
+          (act): GELU(approximate='none')
+          (fc2): Linear(in_features=64, out_features=49, bias=True)
+        )
+        (3): Rearrange('b d n -> b n d')
+      )
+      (channel_mix): Sequential(
+        (0): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (1): MlpBlock(
+          (fc1): Linear(in_features=128, out_features=256, bias=True)
+          (act): GELU(approximate='none')
+          (fc2): Linear(in_features=256, out_features=128, bias=True)
+        )
+      )
+    )
+    (3): MixerBlock(
+      (token_mix): Sequential(
+        (0): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (1): Rearrange('b n d -> b d n')
+        (2): MlpBlock(
+          (fc1): Linear(in_features=49, out_features=64, bias=True)
+          (act): GELU(approximate='none')
+          (fc2): Linear(in_features=64, out_features=49, bias=True)
+        )
+        (3): Rearrange('b d n -> b n d')
+      )
+      (channel_mix): Sequential(
+        (0): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (1): MlpBlock(
+          (fc1): Linear(in_features=128, out_features=256, bias=True)
+          (act): GELU(approximate='none')
+          (fc2): Linear(in_features=256, out_features=128, bias=True)
+        )
+      )
+    )
+  )
+  (layer_norm): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+  (classifier): Linear(in_features=128, out_features=10, bias=True)
+)
+Model Architecture:
+MlpMixer(
+  (patch_embed): Sequential(
+    (0): Conv2d(1, 128, kernel_size=(4, 4), stride=(4, 4))
+    (1): Rearrange('b c h w -> b (h w) c')
+  )
+  (mixer_blocks): Sequential(
+    (0): MixerBlock(
+      (token_mix): Sequential(
+        (0): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (1): Rearrange('b n d -> b d n')
+        (2): MlpBlock(
+          (fc1): Linear(in_features=49, out_features=64, bias=True)
+          (act): GELU(approximate='none')
+          (fc2): Linear(in_features=64, out_features=49, bias=True)
+        )
+        (3): Rearrange('b d n -> b n d')
+      )
+      (channel_mix): Sequential(
+        (0): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (1): MlpBlock(
+          (fc1): Linear(in_features=128, out_features=256, bias=True)
+          (act): GELU(approximate='none')
+          (fc2): Linear(in_features=256, out_features=128, bias=True)
+        )
+      )
+    )
+    (1): MixerBlock(
+      (token_mix): Sequential(
+        (0): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (1): Rearrange('b n d -> b d n')
+        (2): MlpBlock(
+          (fc1): Linear(in_features=49, out_features=64, bias=True)
+          (act): GELU(approximate='none')
+          (fc2): Linear(in_features=64, out_features=49, bias=True)
+        )
+        (3): Rearrange('b d n -> b n d')
+      )
+      (channel_mix): Sequential(
+        (0): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (1): MlpBlock(
+          (fc1): Linear(in_features=128, out_features=256, bias=True)
+          (act): GELU(approximate='none')
+          (fc2): Linear(in_features=256, out_features=128, bias=True)
+        )
+      )
+    )
+    (2): MixerBlock(
+      (token_mix): Sequential(
+        (0): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (1): Rearrange('b n d -> b d n')
+        (2): MlpBlock(
+          (fc1): Linear(in_features=49, out_features=64, bias=True)
+          (act): GELU(approximate='none')
+          (fc2): Linear(in_features=64, out_features=49, bias=True)
+        )
+        (3): Rearrange('b d n -> b n d')
+      )
+      (channel_mix): Sequential(
+        (0): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (1): MlpBlock(
+          (fc1): Linear(in_features=128, out_features=256, bias=True)
+          (act): GELU(approximate='none')
+          (fc2): Linear(in_features=256, out_features=128, bias=True)
+        )
+      )
+    )
+    (3): MixerBlock(
+      (token_mix): Sequential(
+        (0): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (1): Rearrange('b n d -> b d n')
+        (2): MlpBlock(
+          (fc1): Linear(in_features=49, out_features=64, bias=True)
+          (act): GELU(approximate='none')
+          (fc2): Linear(in_features=64, out_features=49, bias=True)
+        )
+        (3): Rearrange('b d n -> b n d')
+      )
+      (channel_mix): Sequential(
+        (0): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (1): MlpBlock(
+          (fc1): Linear(in_features=128, out_features=256, bias=True)
+          (act): GELU(approximate='none')
+          (fc2): Linear(in_features=256, out_features=128, bias=True)
+        )
+      )
+    )
+  )
+  (layer_norm): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+  (classifier): Linear(in_features=128, out_features=10, bias=True)
+)
+Model Architecture:
+Model Architecture:
+MlpMixer(
+  (patch_embed): Sequential(
+    (0): Conv2d(1, 128, kernel_size=(4, 4), stride=(4, 4))
+    (1): Rearrange('b c h w -> b (h w) c')
+  )
+  (mixer_blocks): Sequential(
+    (0): MixerBlock(
+      (token_mix): Sequential(
+        (0): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (1): Rearrange('b n d -> b d n')
+        (2): MlpBlock(
+          (fc1): Linear(in_features=49, out_features=64, bias=True)
+          (act): GELU(approximate='none')
+          (fc2): Linear(in_features=64, out_features=49, bias=True)
+        )
+        (3): Rearrange('b d n -> b n d')
+      )
+      (channel_mix): Sequential(
+        (0): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (1): MlpBlock(
+          (fc1): Linear(in_features=128, out_features=256, bias=True)
+          (act): GELU(approximate='none')
+          (fc2): Linear(in_features=256, out_features=128, bias=True)
+        )
+      )
+    )
+    (1): MixerBlock(
+      (token_mix): Sequential(
+        (0): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (1): Rearrange('b n d -> b d n')
+        (2): MlpBlock(
+          (fc1): Linear(in_features=49, out_features=64, bias=True)
+          (act): GELU(approximate='none')
+          (fc2): Linear(in_features=64, out_features=49, bias=True)
+        )
+        (3): Rearrange('b d n -> b n d')
+      )
+      (channel_mix): Sequential(
+        (0): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (1): MlpBlock(
+          (fc1): Linear(in_features=128, out_features=256, bias=True)
+          (act): GELU(approximate='none')
+          (fc2): Linear(in_features=256, out_features=128, bias=True)
+        )
+      )
+    )
+    (2): MixerBlock(
+      (token_mix): Sequential(
+        (0): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (1): Rearrange('b n d -> b d n')
+        (2): MlpBlock(
+          (fc1): Linear(in_features=49, out_features=64, bias=True)
+          (act): GELU(approximate='none')
+          (fc2): Linear(in_features=64, out_features=49, bias=True)
+        )
+        (3): Rearrange('b d n -> b n d')
+      )
+      (channel_mix): Sequential(
+        (0): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (1): MlpBlock(
+          (fc1): Linear(in_features=128, out_features=256, bias=True)
+          (act): GELU(approximate='none')
+          (fc2): Linear(in_features=256, out_features=128, bias=True)
+        )
+      )
+    )
+    (3): MixerBlock(
+      (token_mix): Sequential(
+        (0): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (1): Rearrange('b n d -> b d n')
+        (2): MlpBlock(
+          (fc1): Linear(in_features=49, out_features=64, bias=True)
+          (act): GELU(approximate='none')
+          (fc2): Linear(in_features=64, out_features=49, bias=True)
+        )
+        (3): Rearrange('b d n -> b n d')
+      )
+      (channel_mix): Sequential(
+        (0): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (1): MlpBlock(
+          (fc1): Linear(in_features=128, out_features=256, bias=True)
+          (act): GELU(approximate='none')
+          (fc2): Linear(in_features=256, out_features=128, bias=True)
+        )
+      )
+    )
+  )
+  (layer_norm): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+  (classifier): Linear(in_features=128, out_features=10, bias=True)
+)
+MlpMixer(
+  (patch_embed): Sequential(
+    (0): Conv2d(1, 128, kernel_size=(4, 4), stride=(4, 4))
+    (1): Rearrange('b c h w -> b (h w) c')
+  )
+  (mixer_blocks): Sequential(
+    (0): MixerBlock(
+      (token_mix): Sequential(
+        (0): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (1): Rearrange('b n d -> b d n')
+        (2): MlpBlock(
+          (fc1): Linear(in_features=49, out_features=64, bias=True)
+          (act): GELU(approximate='none')
+          (fc2): Linear(in_features=64, out_features=49, bias=True)
+        )
+        (3): Rearrange('b d n -> b n d')
+      )
+      (channel_mix): Sequential(
+        (0): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (1): MlpBlock(
+          (fc1): Linear(in_features=128, out_features=256, bias=True)
+          (act): GELU(approximate='none')
+          (fc2): Linear(in_features=256, out_features=128, bias=True)
+        )
+      )
+    )
+    (1): MixerBlock(
+      (token_mix): Sequential(
+        (0): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (1): Rearrange('b n d -> b d n')
+        (2): MlpBlock(
+          (fc1): Linear(in_features=49, out_features=64, bias=True)
+          (act): GELU(approximate='none')
+          (fc2): Linear(in_features=64, out_features=49, bias=True)
+        )
+        (3): Rearrange('b d n -> b n d')
+      )
+      (channel_mix): Sequential(
+        (0): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (1): MlpBlock(
+          (fc1): Linear(in_features=128, out_features=256, bias=True)
+          (act): GELU(approximate='none')
+          (fc2): Linear(in_features=256, out_features=128, bias=True)
+        )
+      )
+    )
+    (2): MixerBlock(
+      (token_mix): Sequential(
+        (0): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (1): Rearrange('b n d -> b d n')
+        (2): MlpBlock(
+          (fc1): Linear(in_features=49, out_features=64, bias=True)
+          (act): GELU(approximate='none')
+          (fc2): Linear(in_features=64, out_features=49, bias=True)
+        )
+        (3): Rearrange('b d n -> b n d')
+      )
+      (channel_mix): Sequential(
+        (0): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (1): MlpBlock(
+          (fc1): Linear(in_features=128, out_features=256, bias=True)
+          (act): GELU(approximate='none')
+          (fc2): Linear(in_features=256, out_features=128, bias=True)
+        )
+      )
+    )
+    (3): MixerBlock(
+      (token_mix): Sequential(
+        (0): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (1): Rearrange('b n d -> b d n')
+        (2): MlpBlock(
+          (fc1): Linear(in_features=49, out_features=64, bias=True)
+          (act): GELU(approximate='none')
+          (fc2): Linear(in_features=64, out_features=49, bias=True)
+        )
+        (3): Rearrange('b d n -> b n d')
+      )
+      (channel_mix): Sequential(
+        (0): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (1): MlpBlock(
+          (fc1): Linear(in_features=128, out_features=256, bias=True)
+          (act): GELU(approximate='none')
+          (fc2): Linear(in_features=256, out_features=128, bias=True)
+        )
+      )
+    )
+  )
+  (layer_norm): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+  (classifier): Linear(in_features=128, out_features=10, bias=True)
+)
+Model Architecture:
+MlpMixer(
+  (patch_embed): Sequential(
+    (0): Conv2d(1, 128, kernel_size=(4, 4), stride=(4, 4))
+    (1): Rearrange('b c h w -> b (h w) c')
+  )
+  (mixer_blocks): Sequential(
+    (0): MixerBlock(
+      (token_mix): Sequential(
+        (0): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (1): Rearrange('b n d -> b d n')
+        (2): MlpBlock(
+          (fc1): Linear(in_features=49, out_features=64, bias=True)
+          (act): GELU(approximate='none')
+          (fc2): Linear(in_features=64, out_features=49, bias=True)
+        )
+        (3): Rearrange('b d n -> b n d')
+      )
+      (channel_mix): Sequential(
+        (0): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (1): MlpBlock(
+          (fc1): Linear(in_features=128, out_features=256, bias=True)
+          (act): GELU(approximate='none')
+          (fc2): Linear(in_features=256, out_features=128, bias=True)
+        )
+      )
+    )
+    (1): MixerBlock(
+      (token_mix): Sequential(
+        (0): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (1): Rearrange('b n d -> b d n')
+        (2): MlpBlock(
+          (fc1): Linear(in_features=49, out_features=64, bias=True)
+          (act): GELU(approximate='none')
+          (fc2): Linear(in_features=64, out_features=49, bias=True)
+        )
+        (3): Rearrange('b d n -> b n d')
+      )
+      (channel_mix): Sequential(
+        (0): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (1): MlpBlock(
+          (fc1): Linear(in_features=128, out_features=256, bias=True)
+          (act): GELU(approximate='none')
+          (fc2): Linear(in_features=256, out_features=128, bias=True)
+        )
+      )
+    )
+    (2): MixerBlock(
+      (token_mix): Sequential(
+        (0): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (1): Rearrange('b n d -> b d n')
+        (2): MlpBlock(
+          (fc1): Linear(in_features=49, out_features=64, bias=True)
+          (act): GELU(approximate='none')
+          (fc2): Linear(in_features=64, out_features=49, bias=True)
+        )
+        (3): Rearrange('b d n -> b n d')
+      )
+      (channel_mix): Sequential(
+        (0): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (1): MlpBlock(
+          (fc1): Linear(in_features=128, out_features=256, bias=True)
+          (act): GELU(approximate='none')
+          (fc2): Linear(in_features=256, out_features=128, bias=True)
+        )
+      )
+    )
+    (3): MixerBlock(
+      (token_mix): Sequential(
+        (0): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (1): Rearrange('b n d -> b d n')
+        (2): MlpBlock(
+          (fc1): Linear(in_features=49, out_features=64, bias=True)
+          (act): GELU(approximate='none')
+          (fc2): Linear(in_features=64, out_features=49, bias=True)
+        )
+        (3): Rearrange('b d n -> b n d')
+      )
+      (channel_mix): Sequential(
+        (0): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (1): MlpBlock(
+          (fc1): Linear(in_features=128, out_features=256, bias=True)
+          (act): GELU(approximate='none')
+          (fc2): Linear(in_features=256, out_features=128, bias=True)
+        )
+      )
+    )
+  )
+  (layer_norm): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+  (classifier): Linear(in_features=128, out_features=10, bias=True)
+)
+Model Architecture:
+MlpMixer(
+  (patch_embed): Sequential(
+    (0): Conv2d(1, 128, kernel_size=(4, 4), stride=(4, 4))
+    (1): Rearrange('b c h w -> b (h w) c')
+  )
+  (mixer_blocks): Sequential(
+    (0): MixerBlock(
+      (token_mix): Sequential(
+        (0): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (1): Rearrange('b n d -> b d n')
+        (2): MlpBlock(
+          (fc1): Linear(in_features=49, out_features=64, bias=True)
+          (act): GELU(approximate='none')
+          (fc2): Linear(in_features=64, out_features=49, bias=True)
+        )
+        (3): Rearrange('b d n -> b n d')
+      )
+      (channel_mix): Sequential(
+        (0): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (1): MlpBlock(
+          (fc1): Linear(in_features=128, out_features=256, bias=True)
+          (act): GELU(approximate='none')
+          (fc2): Linear(in_features=256, out_features=128, bias=True)
+        )
+      )
+    )
+    (1): MixerBlock(
+      (token_mix): Sequential(
+        (0): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (1): Rearrange('b n d -> b d n')
+        (2): MlpBlock(
+          (fc1): Linear(in_features=49, out_features=64, bias=True)
+          (act): GELU(approximate='none')
+          (fc2): Linear(in_features=64, out_features=49, bias=True)
+        )
+        (3): Rearrange('b d n -> b n d')
+      )
+      (channel_mix): Sequential(
+        (0): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (1): MlpBlock(
+          (fc1): Linear(in_features=128, out_features=256, bias=True)
+          (act): GELU(approximate='none')
+          (fc2): Linear(in_features=256, out_features=128, bias=True)
+        )
+      )
+    )
+    (2): MixerBlock(
+      (token_mix): Sequential(
+        (0): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (1): Rearrange('b n d -> b d n')
+        (2): MlpBlock(
+          (fc1): Linear(in_features=49, out_features=64, bias=True)
+          (act): GELU(approximate='none')
+          (fc2): Linear(in_features=64, out_features=49, bias=True)
+        )
+        (3): Rearrange('b d n -> b n d')
+      )
+      (channel_mix): Sequential(
+        (0): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (1): MlpBlock(
+          (fc1): Linear(in_features=128, out_features=256, bias=True)
+          (act): GELU(approximate='none')
+          (fc2): Linear(in_features=256, out_features=128, bias=True)
+        )
+      )
+    )
+    (3): MixerBlock(
+      (token_mix): Sequential(
+        (0): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (1): Rearrange('b n d -> b d n')
+        (2): MlpBlock(
+          (fc1): Linear(in_features=49, out_features=64, bias=True)
+          (act): GELU(approximate='none')
+          (fc2): Linear(in_features=64, out_features=49, bias=True)
+        )
+        (3): Rearrange('b d n -> b n d')
+      )
+      (channel_mix): Sequential(
+        (0): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (1): MlpBlock(
+          (fc1): Linear(in_features=128, out_features=256, bias=True)
+          (act): GELU(approximate='none')
+          (fc2): Linear(in_features=256, out_features=128, bias=True)
+        )
+      )
+    )
+  )
+  (layer_norm): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+  (classifier): Linear(in_features=128, out_features=10, bias=True)
+)
+Train Epoch: 1 [0/60000 (0%)]	Loss: 2.371673
+Train Epoch: 1 [0/60000 (0%)]	Loss: 2.347337
+Train Epoch: 1 [0/60000 (0%)]	Loss: 2.359499
+Train Epoch: 1 [0/60000 (0%)]	Loss: 2.368479
+Train Epoch: 1 [0/60000 (0%)]	Loss: 2.334113
+Train Epoch: 1 [0/60000 (0%)]	Loss: 2.326991
+Train Epoch: 1 [0/60000 (0%)]	Loss: 2.330606
+Train Epoch: 1 [12800/60000 (21%)]	Loss: 0.216225
+Train Epoch: 1 [12800/60000 (21%)]	Loss: 0.380049
+Train Epoch: 1 [12800/60000 (21%)]	Loss: 0.331399
+Train Epoch: 1 [12800/60000 (21%)]	Loss: 0.249081
+Train Epoch: 1 [12800/60000 (21%)]	Loss: 0.253955
+Train Epoch: 1 [12800/60000 (21%)]	Loss: 0.266532
+Train Epoch: 1 [12800/60000 (21%)]	Loss: 0.210421
+Train Epoch: 1 [25600/60000 (43%)]	Loss: 0.130498
+Train Epoch: 1 [25600/60000 (43%)]	Loss: 0.218022
+Train Epoch: 1 [25600/60000 (43%)]	Loss: 0.130457
+Train Epoch: 1 [25600/60000 (43%)]	Loss: 0.215049
+Train Epoch: 1 [25600/60000 (43%)]	Loss: 0.139533
+Train Epoch: 1 [25600/60000 (43%)]	Loss: 0.117274
+Train Epoch: 1 [25600/60000 (43%)]	Loss: 0.177902
+Train Epoch: 1 [38400/60000 (64%)]	Loss: 0.293555
+Train Epoch: 1 [38400/60000 (64%)]	Loss: 0.236854
+Train Epoch: 1 [38400/60000 (64%)]	Loss: 0.245489
+Train Epoch: 1 [38400/60000 (64%)]	Loss: 0.197319
+Train Epoch: 1 [38400/60000 (64%)]	Loss: 0.168694
+Train Epoch: 1 [38400/60000 (64%)]	Loss: 0.103777
+Train Epoch: 1 [38400/60000 (64%)]	Loss: 0.282118
+Train Epoch: 1 [51200/60000 (85%)]	Loss: 0.107440
+Train Epoch: 1 [51200/60000 (85%)]	Loss: 0.089158
+Train Epoch: 1 [51200/60000 (85%)]	Loss: 0.162812
+Train Epoch: 1 [51200/60000 (85%)]	Loss: 0.121025
+Train Epoch: 1 [51200/60000 (85%)]	Loss: 0.166514
+Train Epoch: 1 [51200/60000 (85%)]	Loss: 0.120347
+Train Epoch: 1 [51200/60000 (85%)]	Loss: 0.163357
+
+Validation set: Average loss: 0.1369, Accuracy: 9572/10000 (96%)
+
+Train Epoch: 2 [0/60000 (0%)]	Loss: 0.112596
+
+Validation set: Average loss: 0.1413, Accuracy: 9566/10000 (96%)
+
+Train Epoch: 2 [0/60000 (0%)]	Loss: 0.085742
+
+Validation set: Average loss: 0.1306, Accuracy: 9629/10000 (96%)
+
+
+Validation set: Average loss: 0.1249, Accuracy: 9621/10000 (96%)
+
+Train Epoch: 2 [0/60000 (0%)]	Loss: 0.295242
+
+Validation set: Average loss: 0.1247, Accuracy: 9619/10000 (96%)
+
+Train Epoch: 2 [0/60000 (0%)]	Loss: 0.094603
+Train Epoch: 2 [0/60000 (0%)]	Loss: 0.180359
+
+Validation set: Average loss: 0.1258, Accuracy: 9605/10000 (96%)
+
+
+Validation set: Average loss: 0.1325, Accuracy: 9590/10000 (96%)
+
+Train Epoch: 2 [0/60000 (0%)]	Loss: 0.121325
+Train Epoch: 2 [0/60000 (0%)]	Loss: 0.153995
+Train Epoch: 2 [12800/60000 (21%)]	Loss: 0.072904
+Train Epoch: 2 [12800/60000 (21%)]	Loss: 0.085607
+Train Epoch: 2 [12800/60000 (21%)]	Loss: 0.078598
+Train Epoch: 2 [12800/60000 (21%)]	Loss: 0.086999
+Train Epoch: 2 [12800/60000 (21%)]	Loss: 0.116591
+Train Epoch: 2 [12800/60000 (21%)]	Loss: 0.154526
+Train Epoch: 2 [12800/60000 (21%)]	Loss: 0.047799
+Train Epoch: 2 [25600/60000 (43%)]	Loss: 0.155391
+Train Epoch: 2 [25600/60000 (43%)]	Loss: 0.141065
+Train Epoch: 2 [25600/60000 (43%)]	Loss: 0.158771
+Train Epoch: 2 [25600/60000 (43%)]	Loss: 0.096892
+Train Epoch: 2 [25600/60000 (43%)]	Loss: 0.073185
+Train Epoch: 2 [25600/60000 (43%)]	Loss: 0.181707
+Train Epoch: 2 [25600/60000 (43%)]	Loss: 0.041384
+Train Epoch: 2 [38400/60000 (64%)]	Loss: 0.063143
+Train Epoch: 2 [38400/60000 (64%)]	Loss: 0.221025
+Train Epoch: 2 [38400/60000 (64%)]	Loss: 0.061371
+Train Epoch: 2 [38400/60000 (64%)]	Loss: 0.140862
+Train Epoch: 2 [38400/60000 (64%)]	Loss: 0.070768
+Train Epoch: 2 [38400/60000 (64%)]	Loss: 0.105933
+Train Epoch: 2 [38400/60000 (64%)]	Loss: 0.084770
+Train Epoch: 2 [51200/60000 (85%)]	Loss: 0.193590
+Train Epoch: 2 [51200/60000 (85%)]	Loss: 0.068728
+Train Epoch: 2 [51200/60000 (85%)]	Loss: 0.162507
+Train Epoch: 2 [51200/60000 (85%)]	Loss: 0.131274
+Train Epoch: 2 [51200/60000 (85%)]	Loss: 0.178625
+Train Epoch: 2 [51200/60000 (85%)]	Loss: 0.148611
+Train Epoch: 2 [51200/60000 (85%)]	Loss: 0.152343
+
+Validation set: Average loss: 0.1064, Accuracy: 9671/10000 (97%)
+
+Train Epoch: 3 [0/60000 (0%)]	Loss: 0.063934
+
+Validation set: Average loss: 0.0985, Accuracy: 9698/10000 (97%)
+
+Train Epoch: 3 [0/60000 (0%)]	Loss: 0.126706
+
+Validation set: Average loss: 0.0977, Accuracy: 9709/10000 (97%)
+
+Train Epoch: 3 [0/60000 (0%)]	Loss: 0.109837
+
+Validation set: Average loss: 0.0984, Accuracy: 9689/10000 (97%)
+
+
+Validation set: Average loss: 0.0936, Accuracy: 9696/10000 (97%)
+
+
+Validation set: Average loss: 0.0917, Accuracy: 9711/10000 (97%)
+
+Train Epoch: 3 [0/60000 (0%)]	Loss: 0.084441
+Train Epoch: 3 [0/60000 (0%)]	Loss: 0.061305
+Train Epoch: 3 [0/60000 (0%)]	Loss: 0.075914
+
+Validation set: Average loss: 0.1009, Accuracy: 9679/10000 (97%)
+
+Train Epoch: 3 [0/60000 (0%)]	Loss: 0.100239
+Train Epoch: 3 [12800/60000 (21%)]	Loss: 0.079691
+Train Epoch: 3 [12800/60000 (21%)]	Loss: 0.058846
+Train Epoch: 3 [12800/60000 (21%)]	Loss: 0.084384
+Train Epoch: 3 [12800/60000 (21%)]	Loss: 0.089779
+Train Epoch: 3 [12800/60000 (21%)]	Loss: 0.038268
+Train Epoch: 3 [12800/60000 (21%)]	Loss: 0.121337
+Train Epoch: 3 [12800/60000 (21%)]	Loss: 0.088110
+Train Epoch: 3 [25600/60000 (43%)]	Loss: 0.083934
+Train Epoch: 3 [25600/60000 (43%)]	Loss: 0.070393
+Train Epoch: 3 [25600/60000 (43%)]	Loss: 0.072278
+Train Epoch: 3 [25600/60000 (43%)]	Loss: 0.084380
+Train Epoch: 3 [25600/60000 (43%)]	Loss: 0.107630
+Train Epoch: 3 [25600/60000 (43%)]	Loss: 0.147329
+Train Epoch: 3 [25600/60000 (43%)]	Loss: 0.085207
+Train Epoch: 3 [38400/60000 (64%)]	Loss: 0.083082
+Train Epoch: 3 [38400/60000 (64%)]	Loss: 0.037045
+Train Epoch: 3 [38400/60000 (64%)]	Loss: 0.024782
+Train Epoch: 3 [38400/60000 (64%)]	Loss: 0.134907
+Train Epoch: 3 [38400/60000 (64%)]	Loss: 0.068269
+Train Epoch: 3 [38400/60000 (64%)]	Loss: 0.051767
+Train Epoch: 3 [38400/60000 (64%)]	Loss: 0.085513
+Train Epoch: 3 [51200/60000 (85%)]	Loss: 0.068327
+Train Epoch: 3 [51200/60000 (85%)]	Loss: 0.128958
+Train Epoch: 3 [51200/60000 (85%)]	Loss: 0.065455
+Train Epoch: 3 [51200/60000 (85%)]	Loss: 0.024279
+Train Epoch: 3 [51200/60000 (85%)]	Loss: 0.039789
+Train Epoch: 3 [51200/60000 (85%)]	Loss: 0.090838
+Train Epoch: 3 [51200/60000 (85%)]	Loss: 0.149081
+
+Validation set: Average loss: 0.0770, Accuracy: 9767/10000 (98%)
+
+Train Epoch: 4 [0/60000 (0%)]	Loss: 0.083650
+
+Validation set: Average loss: 0.1000, Accuracy: 9669/10000 (97%)
+
+
+Validation set: Average loss: 0.0756, Accuracy: 9766/10000 (98%)
+
+Train Epoch: 4 [0/60000 (0%)]	Loss: 0.087853
+Train Epoch: 4 [0/60000 (0%)]	Loss: 0.092505
+
+Validation set: Average loss: 0.0753, Accuracy: 9753/10000 (98%)
+
+Train Epoch: 4 [0/60000 (0%)]	Loss: 0.026823
+
+Validation set: Average loss: 0.0756, Accuracy: 9764/10000 (98%)
+
+Train Epoch: 4 [0/60000 (0%)]	Loss: 0.033622
+
+Validation set: Average loss: 0.0891, Accuracy: 9724/10000 (97%)
+
+Train Epoch: 4 [0/60000 (0%)]	Loss: 0.102435
+
+Validation set: Average loss: 0.0777, Accuracy: 9755/10000 (98%)
+
+Train Epoch: 4 [0/60000 (0%)]	Loss: 0.083955
+Train Epoch: 4 [12800/60000 (21%)]	Loss: 0.065339
+Train Epoch: 4 [12800/60000 (21%)]	Loss: 0.059263
+Train Epoch: 4 [12800/60000 (21%)]	Loss: 0.074114
+Train Epoch: 4 [12800/60000 (21%)]	Loss: 0.029330
+Train Epoch: 4 [12800/60000 (21%)]	Loss: 0.036311
+Train Epoch: 4 [12800/60000 (21%)]	Loss: 0.009113
+Train Epoch: 4 [12800/60000 (21%)]	Loss: 0.038371
+Train Epoch: 4 [25600/60000 (43%)]	Loss: 0.050246
+Train Epoch: 4 [25600/60000 (43%)]	Loss: 0.089200
+Train Epoch: 4 [25600/60000 (43%)]	Loss: 0.026833
+Train Epoch: 4 [25600/60000 (43%)]	Loss: 0.145902
+Train Epoch: 4 [25600/60000 (43%)]	Loss: 0.118878
+Train Epoch: 4 [25600/60000 (43%)]	Loss: 0.047907
+Train Epoch: 4 [25600/60000 (43%)]	Loss: 0.023599
+Train Epoch: 4 [38400/60000 (64%)]	Loss: 0.022432
+Train Epoch: 4 [38400/60000 (64%)]	Loss: 0.076873
+Train Epoch: 4 [38400/60000 (64%)]	Loss: 0.064516
+Train Epoch: 4 [38400/60000 (64%)]	Loss: 0.030427
+Train Epoch: 4 [38400/60000 (64%)]	Loss: 0.049853
+Train Epoch: 4 [38400/60000 (64%)]	Loss: 0.052063
+Train Epoch: 4 [38400/60000 (64%)]	Loss: 0.035645
+Train Epoch: 4 [51200/60000 (85%)]	Loss: 0.184592
+Train Epoch: 4 [51200/60000 (85%)]	Loss: 0.046049
+Train Epoch: 4 [51200/60000 (85%)]	Loss: 0.069138
+Train Epoch: 4 [51200/60000 (85%)]	Loss: 0.108094
+Train Epoch: 4 [51200/60000 (85%)]	Loss: 0.027349
+Train Epoch: 4 [51200/60000 (85%)]	Loss: 0.062877
+Train Epoch: 4 [51200/60000 (85%)]	Loss: 0.034107
+
+Validation set: Average loss: 0.0721, Accuracy: 9778/10000 (98%)
+
+
+Validation set: Average loss: 0.0848, Accuracy: 9729/10000 (97%)
+
+Train Epoch: 5 [0/60000 (0%)]	Loss: 0.060442
+Train Epoch: 5 [0/60000 (0%)]	Loss: 0.015575
+
+Validation set: Average loss: 0.0751, Accuracy: 9752/10000 (98%)
+
+Train Epoch: 5 [0/60000 (0%)]	Loss: 0.057857
+
+Validation set: Average loss: 0.0741, Accuracy: 9756/10000 (98%)
+
+Train Epoch: 5 [0/60000 (0%)]	Loss: 0.046356
+
+Validation set: Average loss: 0.0842, Accuracy: 9740/10000 (97%)
+
+Train Epoch: 5 [0/60000 (0%)]	Loss: 0.030417
+
+Validation set: Average loss: 0.0655, Accuracy: 9800/10000 (98%)
+
+Train Epoch: 5 [0/60000 (0%)]	Loss: 0.026794
+
+Validation set: Average loss: 0.0717, Accuracy: 9780/10000 (98%)
+
+Train Epoch: 5 [0/60000 (0%)]	Loss: 0.016370
+Train Epoch: 5 [12800/60000 (21%)]	Loss: 0.052495
+Train Epoch: 5 [12800/60000 (21%)]	Loss: 0.023085
+Train Epoch: 5 [12800/60000 (21%)]	Loss: 0.099026
+Train Epoch: 5 [12800/60000 (21%)]	Loss: 0.061784
+Train Epoch: 5 [12800/60000 (21%)]	Loss: 0.026788
+Train Epoch: 5 [12800/60000 (21%)]	Loss: 0.079546
+Train Epoch: 5 [12800/60000 (21%)]	Loss: 0.020487
+Train Epoch: 5 [25600/60000 (43%)]	Loss: 0.009942
+Train Epoch: 5 [25600/60000 (43%)]	Loss: 0.021271
+Train Epoch: 5 [25600/60000 (43%)]	Loss: 0.047532
+Train Epoch: 5 [25600/60000 (43%)]	Loss: 0.041842
+Train Epoch: 5 [25600/60000 (43%)]	Loss: 0.042601
+Train Epoch: 5 [25600/60000 (43%)]	Loss: 0.030182
+Train Epoch: 5 [25600/60000 (43%)]	Loss: 0.019550
+Train Epoch: 5 [38400/60000 (64%)]	Loss: 0.110660
+Train Epoch: 5 [38400/60000 (64%)]	Loss: 0.133478
+Train Epoch: 5 [38400/60000 (64%)]	Loss: 0.015273
+Train Epoch: 5 [38400/60000 (64%)]	Loss: 0.064105
+Train Epoch: 5 [38400/60000 (64%)]	Loss: 0.080084
+Train Epoch: 5 [38400/60000 (64%)]	Loss: 0.015600
+Train Epoch: 5 [38400/60000 (64%)]	Loss: 0.048820
+Train Epoch: 5 [51200/60000 (85%)]	Loss: 0.190928
+Train Epoch: 5 [51200/60000 (85%)]	Loss: 0.027431
+Train Epoch: 5 [51200/60000 (85%)]	Loss: 0.055438
+Train Epoch: 5 [51200/60000 (85%)]	Loss: 0.022624
+Train Epoch: 5 [51200/60000 (85%)]	Loss: 0.065755
+Train Epoch: 5 [51200/60000 (85%)]	Loss: 0.046447
+Train Epoch: 5 [51200/60000 (85%)]	Loss: 0.018818
+
+Validation set: Average loss: 0.0639, Accuracy: 9804/10000 (98%)
+
+
+Validation set: Average loss: 0.0782, Accuracy: 9767/10000 (98%)
+
+
+Validation set: Average loss: 0.0746, Accuracy: 9764/10000 (98%)
+
+Train Epoch: 6 [0/60000 (0%)]	Loss: 0.044628
+Train Epoch: 6 [0/60000 (0%)]	Loss: 0.017423
+Train Epoch: 6 [0/60000 (0%)]	Loss: 0.031095
+
+Validation set: Average loss: 0.0895, Accuracy: 9698/10000 (97%)
+
+Train Epoch: 6 [0/60000 (0%)]	Loss: 0.082395
+
+Validation set: Average loss: 0.0600, Accuracy: 9822/10000 (98%)
+
+Train Epoch: 6 [0/60000 (0%)]	Loss: 0.018920
+
+Validation set: Average loss: 0.0668, Accuracy: 9802/10000 (98%)
+
+Train Epoch: 6 [0/60000 (0%)]	Loss: 0.100907
+
+Validation set: Average loss: 0.0720, Accuracy: 9772/10000 (98%)
+
+Train Epoch: 6 [0/60000 (0%)]	Loss: 0.076878
+Train Epoch: 6 [12800/60000 (21%)]	Loss: 0.028420
+Train Epoch: 6 [12800/60000 (21%)]	Loss: 0.015102
+Train Epoch: 6 [12800/60000 (21%)]	Loss: 0.105675
+Train Epoch: 6 [12800/60000 (21%)]	Loss: 0.046935
+Train Epoch: 6 [12800/60000 (21%)]	Loss: 0.027153
+Train Epoch: 6 [12800/60000 (21%)]	Loss: 0.003457
+Train Epoch: 6 [12800/60000 (21%)]	Loss: 0.016360
+Train Epoch: 6 [25600/60000 (43%)]	Loss: 0.146585
+Train Epoch: 6 [25600/60000 (43%)]	Loss: 0.036226
+Train Epoch: 6 [25600/60000 (43%)]	Loss: 0.038238
+Train Epoch: 6 [25600/60000 (43%)]	Loss: 0.037028
+Train Epoch: 6 [25600/60000 (43%)]	Loss: 0.041231
+Train Epoch: 6 [25600/60000 (43%)]	Loss: 0.023813
+Train Epoch: 6 [25600/60000 (43%)]	Loss: 0.014072
+Train Epoch: 6 [38400/60000 (64%)]	Loss: 0.030423
+Train Epoch: 6 [38400/60000 (64%)]	Loss: 0.034235
+Train Epoch: 6 [38400/60000 (64%)]	Loss: 0.096915
+Train Epoch: 6 [38400/60000 (64%)]	Loss: 0.006368
+Train Epoch: 6 [38400/60000 (64%)]	Loss: 0.061306
+Train Epoch: 6 [38400/60000 (64%)]	Loss: 0.022376
+Train Epoch: 6 [38400/60000 (64%)]	Loss: 0.030028
+Train Epoch: 6 [51200/60000 (85%)]	Loss: 0.027058
+Train Epoch: 6 [51200/60000 (85%)]	Loss: 0.046760
+Train Epoch: 6 [51200/60000 (85%)]	Loss: 0.087257
+Train Epoch: 6 [51200/60000 (85%)]	Loss: 0.082725
+Train Epoch: 6 [51200/60000 (85%)]	Loss: 0.069948
+Train Epoch: 6 [51200/60000 (85%)]	Loss: 0.040460
+Train Epoch: 6 [51200/60000 (85%)]	Loss: 0.040310
+
+Validation set: Average loss: 0.0693, Accuracy: 9792/10000 (98%)
+
+
+Validation set: Average loss: 0.0710, Accuracy: 9769/10000 (98%)
+
+Train Epoch: 7 [0/60000 (0%)]	Loss: 0.025102
+
+Validation set: Average loss: 0.0637, Accuracy: 9806/10000 (98%)
+
+Train Epoch: 7 [0/60000 (0%)]	Loss: 0.031854
+Train Epoch: 7 [0/60000 (0%)]	Loss: 0.014754
+
+Validation set: Average loss: 0.0624, Accuracy: 9798/10000 (98%)
+
+Train Epoch: 7 [0/60000 (0%)]	Loss: 0.014368
+
+Validation set: Average loss: 0.0742, Accuracy: 9770/10000 (98%)
+
+Train Epoch: 7 [0/60000 (0%)]	Loss: 0.089551
+
+Validation set: Average loss: 0.0764, Accuracy: 9775/10000 (98%)
+
+
+Validation set: Average loss: 0.0713, Accuracy: 9791/10000 (98%)
+
+Train Epoch: 7 [0/60000 (0%)]	Loss: 0.019466
+Train Epoch: 7 [0/60000 (0%)]	Loss: 0.096648
+Train Epoch: 7 [12800/60000 (21%)]	Loss: 0.051870
+Train Epoch: 7 [12800/60000 (21%)]	Loss: 0.048964
+Train Epoch: 7 [12800/60000 (21%)]	Loss: 0.077946
+Train Epoch: 7 [12800/60000 (21%)]	Loss: 0.035843
+Train Epoch: 7 [12800/60000 (21%)]	Loss: 0.036621
+Train Epoch: 7 [12800/60000 (21%)]	Loss: 0.041556
+Train Epoch: 7 [12800/60000 (21%)]	Loss: 0.040929
+Train Epoch: 7 [25600/60000 (43%)]	Loss: 0.015552
+Train Epoch: 7 [25600/60000 (43%)]	Loss: 0.035771
+Train Epoch: 7 [25600/60000 (43%)]	Loss: 0.014750
+Train Epoch: 7 [25600/60000 (43%)]	Loss: 0.057345
+Train Epoch: 7 [25600/60000 (43%)]	Loss: 0.048012
+Train Epoch: 7 [25600/60000 (43%)]	Loss: 0.019999
+Train Epoch: 7 [25600/60000 (43%)]	Loss: 0.004773
+Train Epoch: 7 [38400/60000 (64%)]	Loss: 0.027655
+Train Epoch: 7 [38400/60000 (64%)]	Loss: 0.045912
+Train Epoch: 7 [38400/60000 (64%)]	Loss: 0.039282
+Train Epoch: 7 [38400/60000 (64%)]	Loss: 0.031627
+Train Epoch: 7 [38400/60000 (64%)]	Loss: 0.047963
+Train Epoch: 7 [38400/60000 (64%)]	Loss: 0.026148
+Train Epoch: 7 [38400/60000 (64%)]	Loss: 0.066288
+Train Epoch: 7 [51200/60000 (85%)]	Loss: 0.017016
+Train Epoch: 7 [51200/60000 (85%)]	Loss: 0.064766
+Train Epoch: 7 [51200/60000 (85%)]	Loss: 0.041681
+Train Epoch: 7 [51200/60000 (85%)]	Loss: 0.027537
+Train Epoch: 7 [51200/60000 (85%)]	Loss: 0.017921
+Train Epoch: 7 [51200/60000 (85%)]	Loss: 0.012470
+Train Epoch: 7 [51200/60000 (85%)]	Loss: 0.026996
+
+Validation set: Average loss: 0.1079, Accuracy: 9671/10000 (97%)
+
+
+Validation set: Average loss: 0.0635, Accuracy: 9804/10000 (98%)
+
+Train Epoch: 8 [0/60000 (0%)]	Loss: 0.056124
+
+Validation set: Average loss: 0.0609, Accuracy: 9819/10000 (98%)
+
+Train Epoch: 8 [0/60000 (0%)]	Loss: 0.015584
+Train Epoch: 8 [0/60000 (0%)]	Loss: 0.061483
+
+Validation set: Average loss: 0.0675, Accuracy: 9789/10000 (98%)
+
+Train Epoch: 8 [0/60000 (0%)]	Loss: 0.058125
+
+Validation set: Average loss: 0.0755, Accuracy: 9762/10000 (98%)
+
+Train Epoch: 8 [0/60000 (0%)]	Loss: 0.060205
+
+Validation set: Average loss: 0.0656, Accuracy: 9795/10000 (98%)
+
+Train Epoch: 8 [0/60000 (0%)]	Loss: 0.019053
+
+Validation set: Average loss: 0.0653, Accuracy: 9802/10000 (98%)
+
+Train Epoch: 8 [0/60000 (0%)]	Loss: 0.012839
+Train Epoch: 8 [12800/60000 (21%)]	Loss: 0.024434
+Train Epoch: 8 [12800/60000 (21%)]	Loss: 0.004669
+Train Epoch: 8 [12800/60000 (21%)]	Loss: 0.138900
+Train Epoch: 8 [12800/60000 (21%)]	Loss: 0.014235
+Train Epoch: 8 [12800/60000 (21%)]	Loss: 0.013207
+Train Epoch: 8 [12800/60000 (21%)]	Loss: 0.013693
+Train Epoch: 8 [12800/60000 (21%)]	Loss: 0.023497
+Train Epoch: 8 [25600/60000 (43%)]	Loss: 0.017496
+Train Epoch: 8 [25600/60000 (43%)]	Loss: 0.017364
+Train Epoch: 8 [25600/60000 (43%)]	Loss: 0.053180
+Train Epoch: 8 [25600/60000 (43%)]	Loss: 0.027199
+Train Epoch: 8 [25600/60000 (43%)]	Loss: 0.016274
+Train Epoch: 8 [25600/60000 (43%)]	Loss: 0.008211
+Train Epoch: 8 [25600/60000 (43%)]	Loss: 0.013714
+Train Epoch: 8 [38400/60000 (64%)]	Loss: 0.019399
+Train Epoch: 8 [38400/60000 (64%)]	Loss: 0.019344
+Train Epoch: 8 [38400/60000 (64%)]	Loss: 0.012322
+Train Epoch: 8 [38400/60000 (64%)]	Loss: 0.023318
+Train Epoch: 8 [38400/60000 (64%)]	Loss: 0.004265
+Train Epoch: 8 [38400/60000 (64%)]	Loss: 0.020383
+Train Epoch: 8 [38400/60000 (64%)]	Loss: 0.064138
+Train Epoch: 8 [51200/60000 (85%)]	Loss: 0.040595
+Train Epoch: 8 [51200/60000 (85%)]	Loss: 0.005679
+Train Epoch: 8 [51200/60000 (85%)]	Loss: 0.083692
+Train Epoch: 8 [51200/60000 (85%)]	Loss: 0.013645
+Train Epoch: 8 [51200/60000 (85%)]	Loss: 0.021452
+Train Epoch: 8 [51200/60000 (85%)]	Loss: 0.019923
+Train Epoch: 8 [51200/60000 (85%)]	Loss: 0.017309
+
+Validation set: Average loss: 0.0628, Accuracy: 9818/10000 (98%)
+
+Train Epoch: 9 [0/60000 (0%)]	Loss: 0.004751
+
+Validation set: Average loss: 0.0773, Accuracy: 9783/10000 (98%)
+
+Train Epoch: 9 [0/60000 (0%)]	Loss: 0.081495
+
+Validation set: Average loss: 0.0645, Accuracy: 9804/10000 (98%)
+
+Train Epoch: 9 [0/60000 (0%)]	Loss: 0.020213
+
+Validation set: Average loss: 0.0632, Accuracy: 9817/10000 (98%)
+
+Train Epoch: 9 [0/60000 (0%)]	Loss: 0.011888
+
+Validation set: Average loss: 0.0721, Accuracy: 9795/10000 (98%)
+
+Train Epoch: 9 [0/60000 (0%)]	Loss: 0.006094
+
+Validation set: Average loss: 0.0691, Accuracy: 9800/10000 (98%)
+
+Train Epoch: 9 [0/60000 (0%)]	Loss: 0.053694
+
+Validation set: Average loss: 0.0625, Accuracy: 9816/10000 (98%)
+
+Train Epoch: 9 [0/60000 (0%)]	Loss: 0.021708
+Train Epoch: 9 [12800/60000 (21%)]	Loss: 0.072533
+Train Epoch: 9 [12800/60000 (21%)]	Loss: 0.045853
+Train Epoch: 9 [12800/60000 (21%)]	Loss: 0.021034
+Train Epoch: 9 [12800/60000 (21%)]	Loss: 0.010574
+Train Epoch: 9 [12800/60000 (21%)]	Loss: 0.120786
+Train Epoch: 9 [12800/60000 (21%)]	Loss: 0.031561
+Train Epoch: 9 [12800/60000 (21%)]	Loss: 0.021628
+Train Epoch: 9 [25600/60000 (43%)]	Loss: 0.017497
+Train Epoch: 9 [25600/60000 (43%)]	Loss: 0.003694
+Train Epoch: 9 [25600/60000 (43%)]	Loss: 0.018793
+Train Epoch: 9 [25600/60000 (43%)]	Loss: 0.019831
+Train Epoch: 9 [25600/60000 (43%)]	Loss: 0.008074
+Train Epoch: 9 [25600/60000 (43%)]	Loss: 0.021308
+Train Epoch: 9 [25600/60000 (43%)]	Loss: 0.035058
+Train Epoch: 9 [38400/60000 (64%)]	Loss: 0.004998
+Train Epoch: 9 [38400/60000 (64%)]	Loss: 0.016477
+Train Epoch: 9 [38400/60000 (64%)]	Loss: 0.033649
+Train Epoch: 9 [38400/60000 (64%)]	Loss: 0.071849
+Train Epoch: 9 [38400/60000 (64%)]	Loss: 0.060814
+Train Epoch: 9 [38400/60000 (64%)]	Loss: 0.033455
+Train Epoch: 9 [38400/60000 (64%)]	Loss: 0.015501
+Train Epoch: 9 [51200/60000 (85%)]	Loss: 0.003060
+Train Epoch: 9 [51200/60000 (85%)]	Loss: 0.008562
+Train Epoch: 9 [51200/60000 (85%)]	Loss: 0.026919
+Train Epoch: 9 [51200/60000 (85%)]	Loss: 0.109366
+Train Epoch: 9 [51200/60000 (85%)]	Loss: 0.008184
+Train Epoch: 9 [51200/60000 (85%)]	Loss: 0.009875
+Train Epoch: 9 [51200/60000 (85%)]	Loss: 0.104494
+
+Validation set: Average loss: 0.0729, Accuracy: 9781/10000 (98%)
+
+
+Validation set: Average loss: 0.0653, Accuracy: 9803/10000 (98%)
+
+Train Epoch: 10 [0/60000 (0%)]	Loss: 0.027720
+
+Validation set: Average loss: 0.0804, Accuracy: 9775/10000 (98%)
+
+Train Epoch: 10 [0/60000 (0%)]	Loss: 0.001490
+Train Epoch: 10 [0/60000 (0%)]	Loss: 0.018296
+
+Validation set: Average loss: 0.0848, Accuracy: 9751/10000 (98%)
+
+
+Validation set: Average loss: 0.0715, Accuracy: 9792/10000 (98%)
+
+Train Epoch: 10 [0/60000 (0%)]	Loss: 0.054814
+Train Epoch: 10 [0/60000 (0%)]	Loss: 0.044220
+
+Validation set: Average loss: 0.0594, Accuracy: 9821/10000 (98%)
+
+Train Epoch: 10 [0/60000 (0%)]	Loss: 0.020747
+
+Validation set: Average loss: 0.0659, Accuracy: 9801/10000 (98%)
+
+Train Epoch: 10 [0/60000 (0%)]	Loss: 0.005958
+Train Epoch: 10 [12800/60000 (21%)]	Loss: 0.008217
+Train Epoch: 10 [12800/60000 (21%)]	Loss: 0.004923
+Train Epoch: 10 [12800/60000 (21%)]	Loss: 0.001040
+Train Epoch: 10 [12800/60000 (21%)]	Loss: 0.040482
+Train Epoch: 10 [12800/60000 (21%)]	Loss: 0.005507
+Train Epoch: 10 [12800/60000 (21%)]	Loss: 0.007898
+Train Epoch: 10 [12800/60000 (21%)]	Loss: 0.063743
+Train Epoch: 10 [25600/60000 (43%)]	Loss: 0.050115
+Train Epoch: 10 [25600/60000 (43%)]	Loss: 0.015184
+Train Epoch: 10 [25600/60000 (43%)]	Loss: 0.007349
+Train Epoch: 10 [25600/60000 (43%)]	Loss: 0.029306
+Train Epoch: 10 [25600/60000 (43%)]	Loss: 0.002007
+Train Epoch: 10 [25600/60000 (43%)]	Loss: 0.004827
+Train Epoch: 10 [25600/60000 (43%)]	Loss: 0.055528
+Train Epoch: 10 [38400/60000 (64%)]	Loss: 0.018723
+Train Epoch: 10 [38400/60000 (64%)]	Loss: 0.006431
+Train Epoch: 10 [38400/60000 (64%)]	Loss: 0.009151
+Train Epoch: 10 [38400/60000 (64%)]	Loss: 0.002827
+Train Epoch: 10 [38400/60000 (64%)]	Loss: 0.099236
+Train Epoch: 10 [38400/60000 (64%)]	Loss: 0.034856
+Train Epoch: 10 [38400/60000 (64%)]	Loss: 0.008970
+Train Epoch: 10 [51200/60000 (85%)]	Loss: 0.009597
+Train Epoch: 10 [51200/60000 (85%)]	Loss: 0.028522
+Train Epoch: 10 [51200/60000 (85%)]	Loss: 0.014106
+Train Epoch: 10 [51200/60000 (85%)]	Loss: 0.005414
+Train Epoch: 10 [51200/60000 (85%)]	Loss: 0.053970
+Train Epoch: 10 [51200/60000 (85%)]	Loss: 0.060193
+Train Epoch: 10 [51200/60000 (85%)]	Loss: 0.011994
+
+Validation set: Average loss: 0.0647, Accuracy: 9804/10000 (98%)
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/root/data-tmp/dl/src/mlp/train_mixer.py", line 99, in <module>
+    main() 
+    ^^^^^^
+  File "/root/data-tmp/dl/src/mlp/train_mixer.py", line 90, in main
+    utils.plot_performance(lossv, accv, experiment_name=f"mixer_{args.exp_name}", save_path=figures_dir)
+TypeError: plot_performance() got an unexpected keyword argument 'experiment_name'
+
+Validation set: Average loss: 0.0693, Accuracy: 9785/10000 (98%)
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/root/data-tmp/dl/src/mlp/train_mixer.py", line 99, in <module>
+    main() 
+    ^^^^^^
+  File "/root/data-tmp/dl/src/mlp/train_mixer.py", line 90, in main
+    utils.plot_performance(lossv, accv, experiment_name=f"mixer_{args.exp_name}", save_path=figures_dir)
+TypeError: plot_performance() got an unexpected keyword argument 'experiment_name'
+
+Validation set: Average loss: 0.0598, Accuracy: 9830/10000 (98%)
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/root/data-tmp/dl/src/mlp/train_mixer.py", line 99, in <module>
+    main() 
+    ^^^^^^
+  File "/root/data-tmp/dl/src/mlp/train_mixer.py", line 90, in main
+    utils.plot_performance(lossv, accv, experiment_name=f"mixer_{args.exp_name}", save_path=figures_dir)
+TypeError: plot_performance() got an unexpected keyword argument 'experiment_name'
+
+Validation set: Average loss: 0.0707, Accuracy: 9785/10000 (98%)
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/root/data-tmp/dl/src/mlp/train_mixer.py", line 99, in <module>
+    main() 
+    ^^^^^^
+  File "/root/data-tmp/dl/src/mlp/train_mixer.py", line 90, in main
+    utils.plot_performance(lossv, accv, experiment_name=f"mixer_{args.exp_name}", save_path=figures_dir)
+TypeError: plot_performance() got an unexpected keyword argument 'experiment_name'
+
+Validation set: Average loss: 0.0640, Accuracy: 9812/10000 (98%)
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/root/data-tmp/dl/src/mlp/train_mixer.py", line 99, in <module>
+    main() 
+    ^^^^^^
+  File "/root/data-tmp/dl/src/mlp/train_mixer.py", line 90, in main
+    utils.plot_performance(lossv, accv, experiment_name=f"mixer_{args.exp_name}", save_path=figures_dir)
+TypeError: plot_performance() got an unexpected keyword argument 'experiment_name'
+
+Validation set: Average loss: 0.0754, Accuracy: 9794/10000 (98%)
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/root/data-tmp/dl/src/mlp/train_mixer.py", line 99, in <module>
+    main() 
+    ^^^^^^
+  File "/root/data-tmp/dl/src/mlp/train_mixer.py", line 90, in main
+    utils.plot_performance(lossv, accv, experiment_name=f"mixer_{args.exp_name}", save_path=figures_dir)
+TypeError: plot_performance() got an unexpected keyword argument 'experiment_name'
+
+Validation set: Average loss: 0.0775, Accuracy: 9771/10000 (98%)
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/root/data-tmp/dl/src/mlp/train_mixer.py", line 99, in <module>
+    main() 
+    ^^^^^^
+  File "/root/data-tmp/dl/src/mlp/train_mixer.py", line 90, in main
+    utils.plot_performance(lossv, accv, experiment_name=f"mixer_{args.exp_name}", save_path=figures_dir)
+TypeError: plot_performance() got an unexpected keyword argument 'experiment_name'
+W0617 21:37:37.082000 4143449 site-packages/torch/distributed/elastic/multiprocessing/api.py:900] Sending process 4143513 closing signal SIGTERM
+W0617 21:37:37.088000 4143449 site-packages/torch/distributed/elastic/multiprocessing/api.py:900] Sending process 4143514 closing signal SIGTERM
+W0617 21:37:37.090000 4143449 site-packages/torch/distributed/elastic/multiprocessing/api.py:900] Sending process 4143515 closing signal SIGTERM
+W0617 21:37:37.093000 4143449 site-packages/torch/distributed/elastic/multiprocessing/api.py:900] Sending process 4143516 closing signal SIGTERM
+W0617 21:37:37.096000 4143449 site-packages/torch/distributed/elastic/multiprocessing/api.py:900] Sending process 4143517 closing signal SIGTERM
+W0617 21:37:37.098000 4143449 site-packages/torch/distributed/elastic/multiprocessing/api.py:900] Sending process 4143518 closing signal SIGTERM
+E0617 21:37:37.628000 4143449 site-packages/torch/distributed/elastic/multiprocessing/api.py:874] failed (exitcode: 1) local_rank: 6 (pid: 4143519) of binary: /root/data-tmp/miniconda3/envs/llm/bin/python3.12
+Traceback (most recent call last):
+  File "/root/data-tmp/miniconda3/envs/llm/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/root/data-tmp/miniconda3/envs/llm/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/root/data-tmp/miniconda3/envs/llm/lib/python3.12/site-packages/torch/distributed/run.py", line 892, in main
+    run(args)
+  File "/root/data-tmp/miniconda3/envs/llm/lib/python3.12/site-packages/torch/distributed/run.py", line 883, in run
+    elastic_launch(
+  File "/root/data-tmp/miniconda3/envs/llm/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 139, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/data-tmp/miniconda3/envs/llm/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 270, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+src.mlp.train_mixer FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2025-06-17_21:37:37
+  host      : container-0fed40a4f0-b0ff74cc
+  rank      : 6 (local_rank: 6)
+  exitcode  : 1 (pid: 4143519)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

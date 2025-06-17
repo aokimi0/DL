@@ -1,0 +1,64 @@
+实验 'gan_dcgan_fashion_mnist' 的目录已创建。
+已加载 FASHION_MNIST 数据集。
+开始分布式训练循环...
+[Epoch 0/15] [Batch 0/134] [D loss: 0.7577] [G loss: 1.1449]
+[Epoch 0/15] [Batch 100/134] [D loss: 0.1747] [G loss: 3.2153]
+模型已保存至: out/gan/gan_dcgan_fashion_mnist/generator.pth
+模型已保存至: out/gan/gan_dcgan_fashion_mnist/discriminator.pth
+[Epoch 1/15] [Batch 0/134] [D loss: 0.1960] [G loss: 2.5751]
+[Epoch 1/15] [Batch 100/134] [D loss: 0.6293] [G loss: 2.3824]
+模型已保存至: out/gan/gan_dcgan_fashion_mnist/generator.pth
+模型已保存至: out/gan/gan_dcgan_fashion_mnist/discriminator.pth
+[Epoch 2/15] [Batch 0/134] [D loss: 0.5063] [G loss: 1.4158]
+[Epoch 2/15] [Batch 100/134] [D loss: 0.5329] [G loss: 1.3638]
+模型已保存至: out/gan/gan_dcgan_fashion_mnist/generator.pth
+模型已保存至: out/gan/gan_dcgan_fashion_mnist/discriminator.pth
+[Epoch 3/15] [Batch 0/134] [D loss: 0.5102] [G loss: 1.3131]
+[Epoch 3/15] [Batch 100/134] [D loss: 0.4521] [G loss: 1.1054]
+模型已保存至: out/gan/gan_dcgan_fashion_mnist/generator.pth
+模型已保存至: out/gan/gan_dcgan_fashion_mnist/discriminator.pth
+[Epoch 4/15] [Batch 0/134] [D loss: 0.4894] [G loss: 0.8944]
+[Epoch 4/15] [Batch 100/134] [D loss: 0.5258] [G loss: 1.3121]
+模型已保存至: out/gan/gan_dcgan_fashion_mnist/generator.pth
+模型已保存至: out/gan/gan_dcgan_fashion_mnist/discriminator.pth
+[Epoch 5/15] [Batch 0/134] [D loss: 0.4055] [G loss: 1.1217]
+[Epoch 5/15] [Batch 100/134] [D loss: 0.3712] [G loss: 1.0795]
+模型已保存至: out/gan/gan_dcgan_fashion_mnist/generator.pth
+模型已保存至: out/gan/gan_dcgan_fashion_mnist/discriminator.pth
+[Epoch 6/15] [Batch 0/134] [D loss: 0.3991] [G loss: 0.9150]
+[Epoch 6/15] [Batch 100/134] [D loss: 0.4800] [G loss: 1.3914]
+模型已保存至: out/gan/gan_dcgan_fashion_mnist/generator.pth
+模型已保存至: out/gan/gan_dcgan_fashion_mnist/discriminator.pth
+[Epoch 7/15] [Batch 0/134] [D loss: 0.6891] [G loss: 2.1561]
+[Epoch 7/15] [Batch 100/134] [D loss: 0.5205] [G loss: 1.0177]
+模型已保存至: out/gan/gan_dcgan_fashion_mnist/generator.pth
+模型已保存至: out/gan/gan_dcgan_fashion_mnist/discriminator.pth
+[Epoch 8/15] [Batch 0/134] [D loss: 0.5759] [G loss: 1.0392]
+[Epoch 8/15] [Batch 100/134] [D loss: 0.5530] [G loss: 1.4803]
+模型已保存至: out/gan/gan_dcgan_fashion_mnist/generator.pth
+模型已保存至: out/gan/gan_dcgan_fashion_mnist/discriminator.pth
+[Epoch 9/15] [Batch 0/134] [D loss: 0.5099] [G loss: 1.1613]
+[Epoch 9/15] [Batch 100/134] [D loss: 0.6602] [G loss: 1.9745]
+模型已保存至: out/gan/gan_dcgan_fashion_mnist/generator.pth
+模型已保存至: out/gan/gan_dcgan_fashion_mnist/discriminator.pth
+[Epoch 10/15] [Batch 0/134] [D loss: 0.5186] [G loss: 0.9830]
+[Epoch 10/15] [Batch 100/134] [D loss: 0.6278] [G loss: 1.6292]
+模型已保存至: out/gan/gan_dcgan_fashion_mnist/generator.pth
+模型已保存至: out/gan/gan_dcgan_fashion_mnist/discriminator.pth
+[Epoch 11/15] [Batch 0/134] [D loss: 0.5536] [G loss: 0.7650]
+[Epoch 11/15] [Batch 100/134] [D loss: 0.5520] [G loss: 1.3128]
+模型已保存至: out/gan/gan_dcgan_fashion_mnist/generator.pth
+模型已保存至: out/gan/gan_dcgan_fashion_mnist/discriminator.pth
+[Epoch 12/15] [Batch 0/134] [D loss: 0.5450] [G loss: 0.8242]
+[Epoch 12/15] [Batch 100/134] [D loss: 0.5035] [G loss: 1.0777]
+模型已保存至: out/gan/gan_dcgan_fashion_mnist/generator.pth
+模型已保存至: out/gan/gan_dcgan_fashion_mnist/discriminator.pth
+[Epoch 13/15] [Batch 0/134] [D loss: 0.5355] [G loss: 1.1423]
+[Epoch 13/15] [Batch 100/134] [D loss: 0.5872] [G loss: 0.9393]
+模型已保存至: out/gan/gan_dcgan_fashion_mnist/generator.pth
+模型已保存至: out/gan/gan_dcgan_fashion_mnist/discriminator.pth
+[Epoch 14/15] [Batch 0/134] [D loss: 0.4957] [G loss: 0.8462]
+[Epoch 14/15] [Batch 100/134] [D loss: 0.6001] [G loss: 1.2583]
+模型已保存至: out/gan/gan_dcgan_fashion_mnist/generator.pth
+模型已保存至: out/gan/gan_dcgan_fashion_mnist/discriminator.pth
+训练完成。模型已保存至 out/gan/gan_dcgan_fashion_mnist

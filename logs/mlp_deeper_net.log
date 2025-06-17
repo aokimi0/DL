@@ -1,0 +1,511 @@
+Running Experiment: deeper_net
+Using device: cuda
+Running Experiment: deeper_net
+Using device: cuda
+Running Experiment: deeper_net
+Using device: cuda
+Running Experiment: deeper_net
+Using device: cuda
+Running Experiment: deeper_net
+Using device: cuda
+Running Experiment: deeper_net
+Using device: cuda
+Running Experiment: deeper_net
+Using device: cuda
+Model Architecture:
+MLP(
+  (network): Sequential(
+    (0): Linear(in_features=784, out_features=128, bias=True)
+    (1): ReLU()
+    (2): Dropout(p=0.2, inplace=False)
+    (3): Linear(in_features=128, out_features=64, bias=True)
+    (4): ReLU()
+    (5): Dropout(p=0.2, inplace=False)
+    (6): Linear(in_features=64, out_features=32, bias=True)
+    (7): ReLU()
+    (8): Dropout(p=0.2, inplace=False)
+    (9): Linear(in_features=32, out_features=10, bias=True)
+  )
+)
+
+Optimizer:
+SGD (
+Parameter Group 0
+    dampening: 0
+    differentiable: False
+    foreach: None
+    fused: None
+    lr: 0.01
+    maximize: False
+    momentum: 0.5
+    nesterov: False
+    weight_decay: 0
+)
+Model Architecture:
+MLP(
+  (network): Sequential(
+    (0): Linear(in_features=784, out_features=128, bias=True)
+    (1): ReLU()
+    (2): Dropout(p=0.2, inplace=False)
+    (3): Linear(in_features=128, out_features=64, bias=True)
+    (4): ReLU()
+    (5): Dropout(p=0.2, inplace=False)
+    (6): Linear(in_features=64, out_features=32, bias=True)
+    (7): ReLU()
+    (8): Dropout(p=0.2, inplace=False)
+    (9): Linear(in_features=32, out_features=10, bias=True)
+  )
+)
+
+Optimizer:
+SGD (
+Parameter Group 0
+    dampening: 0
+    differentiable: False
+    foreach: None
+    fused: None
+    lr: 0.01
+    maximize: False
+    momentum: 0.5
+    nesterov: False
+    weight_decay: 0
+)
+Model Architecture:
+MLP(
+  (network): Sequential(
+    (0): Linear(in_features=784, out_features=128, bias=True)
+    (1): ReLU()
+    (2): Dropout(p=0.2, inplace=False)
+    (3): Linear(in_features=128, out_features=64, bias=True)
+    (4): ReLU()
+    (5): Dropout(p=0.2, inplace=False)
+    (6): Linear(in_features=64, out_features=32, bias=True)
+    (7): ReLU()
+    (8): Dropout(p=0.2, inplace=False)
+    (9): Linear(in_features=32, out_features=10, bias=True)
+  )
+)
+
+Optimizer:
+SGD (
+Parameter Group 0
+    dampening: 0
+    differentiable: False
+    foreach: None
+    fused: None
+    lr: 0.01
+    maximize: False
+    momentum: 0.5
+    nesterov: False
+    weight_decay: 0
+)
+Model Architecture:
+MLP(
+  (network): Sequential(
+    (0): Linear(in_features=784, out_features=128, bias=True)
+    (1): ReLU()
+    (2): Dropout(p=0.2, inplace=False)
+    (3): Linear(in_features=128, out_features=64, bias=True)
+    (4): ReLU()
+    (5): Dropout(p=0.2, inplace=False)
+    (6): Linear(in_features=64, out_features=32, bias=True)
+    (7): ReLU()
+    (8): Dropout(p=0.2, inplace=False)
+    (9): Linear(in_features=32, out_features=10, bias=True)
+  )
+)
+
+Optimizer:
+SGD (
+Parameter Group 0
+    dampening: 0
+    differentiable: False
+    foreach: None
+    fused: None
+    lr: 0.01
+    maximize: False
+    momentum: 0.5
+    nesterov: False
+    weight_decay: 0
+)
+Model Architecture:
+MLP(
+  (network): Sequential(
+    (0): Linear(in_features=784, out_features=128, bias=True)
+    (1): ReLU()
+    (2): Dropout(p=0.2, inplace=False)
+    (3): Linear(in_features=128, out_features=64, bias=True)
+    (4): ReLU()
+    (5): Dropout(p=0.2, inplace=False)
+    (6): Linear(in_features=64, out_features=32, bias=True)
+    (7): ReLU()
+    (8): Dropout(p=0.2, inplace=False)
+    (9): Linear(in_features=32, out_features=10, bias=True)
+  )
+)
+
+Optimizer:
+SGD (
+Parameter Group 0
+    dampening: 0
+    differentiable: False
+    foreach: None
+    fused: None
+    lr: 0.01
+    maximize: False
+    momentum: 0.5
+    nesterov: False
+    weight_decay: 0
+)
+Model Architecture:
+MLP(
+  (network): Sequential(
+    (0): Linear(in_features=784, out_features=128, bias=True)
+    (1): ReLU()
+    (2): Dropout(p=0.2, inplace=False)
+    (3): Linear(in_features=128, out_features=64, bias=True)
+    (4): ReLU()
+    (5): Dropout(p=0.2, inplace=False)
+    (6): Linear(in_features=64, out_features=32, bias=True)
+    (7): ReLU()
+    (8): Dropout(p=0.2, inplace=False)
+    (9): Linear(in_features=32, out_features=10, bias=True)
+  )
+)
+
+Optimizer:
+SGD (
+Parameter Group 0
+    dampening: 0
+    differentiable: False
+    foreach: None
+    fused: None
+    lr: 0.01
+    maximize: False
+    momentum: 0.5
+    nesterov: False
+    weight_decay: 0
+)
+Model Architecture:
+MLP(
+  (network): Sequential(
+    (0): Linear(in_features=784, out_features=128, bias=True)
+    (1): ReLU()
+    (2): Dropout(p=0.2, inplace=False)
+    (3): Linear(in_features=128, out_features=64, bias=True)
+    (4): ReLU()
+    (5): Dropout(p=0.2, inplace=False)
+    (6): Linear(in_features=64, out_features=32, bias=True)
+    (7): ReLU()
+    (8): Dropout(p=0.2, inplace=False)
+    (9): Linear(in_features=32, out_features=10, bias=True)
+  )
+)
+
+Optimizer:
+SGD (
+Parameter Group 0
+    dampening: 0
+    differentiable: False
+    foreach: None
+    fused: None
+    lr: 0.01
+    maximize: False
+    momentum: 0.5
+    nesterov: False
+    weight_decay: 0
+)
+Train Epoch: 1 [0/60000 (0%)]	Loss: 2.305831
+Train Epoch: 1 [0/60000 (0%)]	Loss: 2.312525
+Train Epoch: 1 [0/60000 (0%)]	Loss: 2.301854
+Train Epoch: 1 [0/60000 (0%)]	Loss: 2.301547
+Train Epoch: 1 [0/60000 (0%)]	Loss: 2.314521
+Train Epoch: 1 [0/60000 (0%)]	Loss: 2.324272
+Train Epoch: 1 [0/60000 (0%)]	Loss: 2.299817
+Train Epoch: 1 [12800/60000 (21%)]	Loss: 2.307191
+Train Epoch: 1 [12800/60000 (21%)]	Loss: 2.286264
+Train Epoch: 1 [12800/60000 (21%)]	Loss: 2.273881
+Train Epoch: 1 [12800/60000 (21%)]	Loss: 2.272973
+Train Epoch: 1 [12800/60000 (21%)]	Loss: 2.282809
+Train Epoch: 1 [12800/60000 (21%)]	Loss: 2.279083
+Train Epoch: 1 [12800/60000 (21%)]	Loss: 2.283376
+Train Epoch: 1 [25600/60000 (43%)]	Loss: 2.186640
+Train Epoch: 1 [25600/60000 (43%)]	Loss: 2.206075
+Train Epoch: 1 [25600/60000 (43%)]	Loss: 2.221419
+Train Epoch: 1 [25600/60000 (43%)]	Loss: 2.209411
+Train Epoch: 1 [25600/60000 (43%)]	Loss: 2.232557
+Train Epoch: 1 [25600/60000 (43%)]	Loss: 2.216000
+Train Epoch: 1 [25600/60000 (43%)]	Loss: 2.262202
+Train Epoch: 1 [38400/60000 (64%)]	Loss: 1.961813
+Train Epoch: 1 [38400/60000 (64%)]	Loss: 1.896460
+Train Epoch: 1 [38400/60000 (64%)]	Loss: 1.902377
+Train Epoch: 1 [38400/60000 (64%)]	Loss: 1.969327
+Train Epoch: 1 [38400/60000 (64%)]	Loss: 2.096741
+Train Epoch: 1 [38400/60000 (64%)]	Loss: 2.010777
+Train Epoch: 1 [38400/60000 (64%)]	Loss: 1.745643
+Train Epoch: 1 [51200/60000 (85%)]	Loss: 1.419260
+Train Epoch: 1 [51200/60000 (85%)]	Loss: 1.361386
+Train Epoch: 1 [51200/60000 (85%)]	Loss: 1.487569
+Train Epoch: 1 [51200/60000 (85%)]	Loss: 1.369333
+Train Epoch: 1 [51200/60000 (85%)]	Loss: 1.257553
+Train Epoch: 1 [51200/60000 (85%)]	Loss: 1.336523
+Train Epoch: 1 [51200/60000 (85%)]	Loss: 1.342507
+
+Validation set: Average loss: 0.9181, Accuracy: 7654/10000 (77%)
+
+Train Epoch: 2 [0/60000 (0%)]	Loss: 1.073235
+
+Validation set: Average loss: 0.9022, Accuracy: 7311/10000 (73%)
+
+Train Epoch: 2 [0/60000 (0%)]	Loss: 1.059492
+
+Validation set: Average loss: 1.0034, Accuracy: 7271/10000 (73%)
+
+Train Epoch: 2 [0/60000 (0%)]	Loss: 1.291927
+
+Validation set: Average loss: 0.9856, Accuracy: 7053/10000 (71%)
+
+Train Epoch: 2 [0/60000 (0%)]	Loss: 1.218449
+
+Validation set: Average loss: 0.9422, Accuracy: 7509/10000 (75%)
+
+Train Epoch: 2 [0/60000 (0%)]	Loss: 1.186466
+
+Validation set: Average loss: 0.9277, Accuracy: 7256/10000 (73%)
+
+Train Epoch: 2 [0/60000 (0%)]	Loss: 1.128045
+
+Validation set: Average loss: 0.8395, Accuracy: 7599/10000 (76%)
+
+Train Epoch: 2 [0/60000 (0%)]	Loss: 1.163458
+Train Epoch: 2 [12800/60000 (21%)]	Loss: 0.886851
+Train Epoch: 2 [12800/60000 (21%)]	Loss: 0.914766
+Train Epoch: 2 [12800/60000 (21%)]	Loss: 1.024959
+Train Epoch: 2 [12800/60000 (21%)]	Loss: 0.974509
+Train Epoch: 2 [12800/60000 (21%)]	Loss: 1.166893
+Train Epoch: 2 [12800/60000 (21%)]	Loss: 0.934473
+Train Epoch: 2 [12800/60000 (21%)]	Loss: 0.931317
+Train Epoch: 2 [25600/60000 (43%)]	Loss: 0.809874
+Train Epoch: 2 [25600/60000 (43%)]	Loss: 0.722638
+Train Epoch: 2 [25600/60000 (43%)]	Loss: 0.640247
+Train Epoch: 2 [25600/60000 (43%)]	Loss: 0.866885
+Train Epoch: 2 [25600/60000 (43%)]	Loss: 0.748620
+Train Epoch: 2 [25600/60000 (43%)]	Loss: 0.703972
+Train Epoch: 2 [25600/60000 (43%)]	Loss: 0.710553
+Train Epoch: 2 [38400/60000 (64%)]	Loss: 0.868244
+Train Epoch: 2 [38400/60000 (64%)]	Loss: 0.965640
+Train Epoch: 2 [38400/60000 (64%)]	Loss: 0.806177
+Train Epoch: 2 [38400/60000 (64%)]	Loss: 0.881644
+Train Epoch: 2 [38400/60000 (64%)]	Loss: 0.989589
+Train Epoch: 2 [38400/60000 (64%)]	Loss: 0.840226
+Train Epoch: 2 [38400/60000 (64%)]	Loss: 0.640628
+Train Epoch: 2 [51200/60000 (85%)]	Loss: 0.502968
+Train Epoch: 2 [51200/60000 (85%)]	Loss: 0.549695
+Train Epoch: 2 [51200/60000 (85%)]	Loss: 0.482934
+Train Epoch: 2 [51200/60000 (85%)]	Loss: 0.620323
+Train Epoch: 2 [51200/60000 (85%)]	Loss: 0.661735
+Train Epoch: 2 [51200/60000 (85%)]	Loss: 0.747854
+Train Epoch: 2 [51200/60000 (85%)]	Loss: 0.574943
+
+Validation set: Average loss: 0.4202, Accuracy: 8808/10000 (88%)
+
+Train Epoch: 3 [0/60000 (0%)]	Loss: 0.677551
+
+Validation set: Average loss: 0.4970, Accuracy: 8577/10000 (86%)
+
+Train Epoch: 3 [0/60000 (0%)]	Loss: 0.688756
+
+Validation set: Average loss: 0.4522, Accuracy: 8762/10000 (88%)
+
+Train Epoch: 3 [0/60000 (0%)]	Loss: 0.795572
+
+Validation set: Average loss: 0.5178, Accuracy: 8452/10000 (85%)
+
+Train Epoch: 3 [0/60000 (0%)]	Loss: 0.759962
+
+Validation set: Average loss: 0.4959, Accuracy: 8594/10000 (86%)
+
+Train Epoch: 3 [0/60000 (0%)]	Loss: 0.690023
+
+Validation set: Average loss: 0.4570, Accuracy: 8726/10000 (87%)
+
+Train Epoch: 3 [0/60000 (0%)]	Loss: 0.765462
+
+Validation set: Average loss: 0.4240, Accuracy: 8844/10000 (88%)
+
+Train Epoch: 3 [0/60000 (0%)]	Loss: 0.739411
+Train Epoch: 3 [12800/60000 (21%)]	Loss: 0.532986
+Train Epoch: 3 [12800/60000 (21%)]	Loss: 0.679958
+Train Epoch: 3 [12800/60000 (21%)]	Loss: 0.749639
+Train Epoch: 3 [12800/60000 (21%)]	Loss: 0.738990
+Train Epoch: 3 [12800/60000 (21%)]	Loss: 0.520388
+Train Epoch: 3 [12800/60000 (21%)]	Loss: 0.569578
+Train Epoch: 3 [12800/60000 (21%)]	Loss: 0.506768
+Train Epoch: 3 [25600/60000 (43%)]	Loss: 0.458409
+Train Epoch: 3 [25600/60000 (43%)]	Loss: 0.392415
+Train Epoch: 3 [25600/60000 (43%)]	Loss: 0.510317
+Train Epoch: 3 [25600/60000 (43%)]	Loss: 0.693253
+Train Epoch: 3 [25600/60000 (43%)]	Loss: 0.666369
+Train Epoch: 3 [25600/60000 (43%)]	Loss: 0.505964
+Train Epoch: 3 [25600/60000 (43%)]	Loss: 0.660921
+Train Epoch: 3 [38400/60000 (64%)]	Loss: 0.426691
+Train Epoch: 3 [38400/60000 (64%)]	Loss: 0.452772
+Train Epoch: 3 [38400/60000 (64%)]	Loss: 0.599647
+Train Epoch: 3 [38400/60000 (64%)]	Loss: 0.568670
+Train Epoch: 3 [38400/60000 (64%)]	Loss: 0.506430
+Train Epoch: 3 [38400/60000 (64%)]	Loss: 0.533924
+Train Epoch: 3 [38400/60000 (64%)]	Loss: 0.479498
+Train Epoch: 3 [51200/60000 (85%)]	Loss: 0.412133
+Train Epoch: 3 [51200/60000 (85%)]	Loss: 0.418384
+Train Epoch: 3 [51200/60000 (85%)]	Loss: 0.356281
+Train Epoch: 3 [51200/60000 (85%)]	Loss: 0.439065
+Train Epoch: 3 [51200/60000 (85%)]	Loss: 0.400869
+Train Epoch: 3 [51200/60000 (85%)]	Loss: 0.397766
+Train Epoch: 3 [51200/60000 (85%)]	Loss: 0.653115
+
+Validation set: Average loss: 0.3141, Accuracy: 9087/10000 (91%)
+
+Train Epoch: 4 [0/60000 (0%)]	Loss: 0.421965
+
+Validation set: Average loss: 0.3150, Accuracy: 9101/10000 (91%)
+
+Train Epoch: 4 [0/60000 (0%)]	Loss: 0.422737
+
+Validation set: Average loss: 0.3518, Accuracy: 8989/10000 (90%)
+
+Train Epoch: 4 [0/60000 (0%)]	Loss: 0.511542
+
+Validation set: Average loss: 0.3260, Accuracy: 9047/10000 (90%)
+
+Train Epoch: 4 [0/60000 (0%)]	Loss: 0.490735
+
+Validation set: Average loss: 0.3506, Accuracy: 8994/10000 (90%)
+
+Train Epoch: 4 [0/60000 (0%)]	Loss: 0.380917
+
+Validation set: Average loss: 0.3389, Accuracy: 9057/10000 (91%)
+
+Train Epoch: 4 [0/60000 (0%)]	Loss: 0.411786
+
+Validation set: Average loss: 0.3163, Accuracy: 9093/10000 (91%)
+
+Train Epoch: 4 [0/60000 (0%)]	Loss: 0.360874
+Train Epoch: 4 [12800/60000 (21%)]	Loss: 0.417042
+Train Epoch: 4 [12800/60000 (21%)]	Loss: 0.502752
+Train Epoch: 4 [12800/60000 (21%)]	Loss: 0.488058
+Train Epoch: 4 [12800/60000 (21%)]	Loss: 0.365664
+Train Epoch: 4 [12800/60000 (21%)]	Loss: 0.526876
+Train Epoch: 4 [12800/60000 (21%)]	Loss: 0.398246
+Train Epoch: 4 [12800/60000 (21%)]	Loss: 0.424615
+Train Epoch: 4 [25600/60000 (43%)]	Loss: 0.317437
+Train Epoch: 4 [25600/60000 (43%)]	Loss: 0.472064
+Train Epoch: 4 [25600/60000 (43%)]	Loss: 0.345453
+Train Epoch: 4 [25600/60000 (43%)]	Loss: 0.347383
+Train Epoch: 4 [25600/60000 (43%)]	Loss: 0.431539
+Train Epoch: 4 [25600/60000 (43%)]	Loss: 0.256721
+Train Epoch: 4 [25600/60000 (43%)]	Loss: 0.298948
+Train Epoch: 4 [38400/60000 (64%)]	Loss: 0.355816
+Train Epoch: 4 [38400/60000 (64%)]	Loss: 0.326261
+Train Epoch: 4 [38400/60000 (64%)]	Loss: 0.530839
+Train Epoch: 4 [38400/60000 (64%)]	Loss: 0.663061
+Train Epoch: 4 [38400/60000 (64%)]	Loss: 0.314889
+Train Epoch: 4 [38400/60000 (64%)]	Loss: 0.364189
+Train Epoch: 4 [38400/60000 (64%)]	Loss: 0.495656
+Train Epoch: 4 [51200/60000 (85%)]	Loss: 0.601812
+Train Epoch: 4 [51200/60000 (85%)]	Loss: 0.407444
+Train Epoch: 4 [51200/60000 (85%)]	Loss: 0.628919
+Train Epoch: 4 [51200/60000 (85%)]	Loss: 0.466267
+Train Epoch: 4 [51200/60000 (85%)]	Loss: 0.317783
+Train Epoch: 4 [51200/60000 (85%)]	Loss: 0.335438
+Train Epoch: 4 [51200/60000 (85%)]	Loss: 0.409335
+
+Validation set: Average loss: 0.2459, Accuracy: 9276/10000 (93%)
+
+Train Epoch: 5 [0/60000 (0%)]	Loss: 0.574951
+
+Validation set: Average loss: 0.2535, Accuracy: 9275/10000 (93%)
+
+Train Epoch: 5 [0/60000 (0%)]	Loss: 0.281384
+
+Validation set: Average loss: 0.2733, Accuracy: 9212/10000 (92%)
+
+Train Epoch: 5 [0/60000 (0%)]	Loss: 0.371678
+
+Validation set: Average loss: 0.2543, Accuracy: 9257/10000 (93%)
+
+Train Epoch: 5 [0/60000 (0%)]	Loss: 0.498260
+
+Validation set: Average loss: 0.2634, Accuracy: 9217/10000 (92%)
+
+Train Epoch: 5 [0/60000 (0%)]	Loss: 0.379602
+Train Epoch: 5 [12800/60000 (21%)]	Loss: 0.326989
+
+Validation set: Average loss: 0.2556, Accuracy: 9244/10000 (92%)
+
+Train Epoch: 5 [0/60000 (0%)]	Loss: 0.496159
+Train Epoch: 5 [12800/60000 (21%)]	Loss: 0.372510
+
+Validation set: Average loss: 0.2632, Accuracy: 9254/10000 (93%)
+
+Train Epoch: 5 [0/60000 (0%)]	Loss: 0.258480
+Train Epoch: 5 [12800/60000 (21%)]	Loss: 0.389434
+Train Epoch: 5 [12800/60000 (21%)]	Loss: 0.356056
+Train Epoch: 5 [12800/60000 (21%)]	Loss: 0.445670
+Train Epoch: 5 [25600/60000 (43%)]	Loss: 0.413915
+Train Epoch: 5 [12800/60000 (21%)]	Loss: 0.367541
+Train Epoch: 5 [25600/60000 (43%)]	Loss: 0.632211
+Train Epoch: 5 [12800/60000 (21%)]	Loss: 0.530317
+Train Epoch: 5 [25600/60000 (43%)]	Loss: 0.315580
+Train Epoch: 5 [25600/60000 (43%)]	Loss: 0.517286
+Train Epoch: 5 [25600/60000 (43%)]	Loss: 0.205623
+Train Epoch: 5 [38400/60000 (64%)]	Loss: 0.347432
+Train Epoch: 5 [38400/60000 (64%)]	Loss: 0.514331
+Train Epoch: 5 [25600/60000 (43%)]	Loss: 0.195184
+Train Epoch: 5 [38400/60000 (64%)]	Loss: 0.371844
+Train Epoch: 5 [25600/60000 (43%)]	Loss: 0.263673
+Train Epoch: 5 [38400/60000 (64%)]	Loss: 0.536715
+Train Epoch: 5 [38400/60000 (64%)]	Loss: 0.209540
+Train Epoch: 5 [51200/60000 (85%)]	Loss: 0.368310
+Train Epoch: 5 [51200/60000 (85%)]	Loss: 0.231843
+Train Epoch: 5 [38400/60000 (64%)]	Loss: 0.395330
+Train Epoch: 5 [51200/60000 (85%)]	Loss: 0.467842
+Train Epoch: 5 [38400/60000 (64%)]	Loss: 0.389262
+Train Epoch: 5 [51200/60000 (85%)]	Loss: 0.264143
+Train Epoch: 5 [51200/60000 (85%)]	Loss: 0.330206
+Train Epoch: 5 [51200/60000 (85%)]	Loss: 0.446662
+
+Validation set: Average loss: 0.2171, Accuracy: 9341/10000 (93%)
+
+
+Validation set: Average loss: 0.2120, Accuracy: 9390/10000 (94%)
+
+Train Epoch: 5 [51200/60000 (85%)]	Loss: 0.366640
+性能图表已保存至: fig/mlp/deeper_net/mlp_performance_deeper_net.png
+Model saved to out/mlp/deeper_net/model.pth
+性能图表已保存至: fig/mlp/deeper_net/mlp_performance_deeper_net.png
+Model saved to out/mlp/deeper_net/model.pth
+
+Validation set: Average loss: 0.2246, Accuracy: 9348/10000 (93%)
+
+性能图表已保存至: fig/mlp/deeper_net/mlp_performance_deeper_net.png
+Model saved to out/mlp/deeper_net/model.pth
+
+Validation set: Average loss: 0.2148, Accuracy: 9327/10000 (93%)
+
+
+Validation set: Average loss: 0.2217, Accuracy: 9326/10000 (93%)
+
+
+Validation set: Average loss: 0.2160, Accuracy: 9363/10000 (94%)
+
+性能图表已保存至: fig/mlp/deeper_net/mlp_performance_deeper_net.png
+Model saved to out/mlp/deeper_net/model.pth
+性能图表已保存至: fig/mlp/deeper_net/mlp_performance_deeper_net.png
+Model saved to out/mlp/deeper_net/model.pth
+性能图表已保存至: fig/mlp/deeper_net/mlp_performance_deeper_net.png
+Model saved to out/mlp/deeper_net/model.pth
+
+Validation set: Average loss: 0.2200, Accuracy: 9366/10000 (94%)
+
+性能图表已保存至: fig/mlp/deeper_net/mlp_performance_deeper_net.png
+Model saved to out/mlp/deeper_net/model.pth

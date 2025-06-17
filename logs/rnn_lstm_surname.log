@@ -1,0 +1,33 @@
+Using device: cuda
+
+Training model: LSTM
+LSTM(
+  (lstm): LSTM(57, 128)
+  (out): Linear(in_features=128, out_features=18, bias=True)
+  (log_softmax): LogSoftmax(dim=-1)
+)
+   500   5% (2s) Loss: 2.8206 | Nott -> Portuguese ✗ (English)
+  1000  10% (4s) Loss: 2.9168 | Albricci -> English ✗ (Italian)
+  1500  15% (6s) Loss: 2.9653 | Kouba -> Portuguese ✗ (Czech)
+  2000  20% (8s) Loss: 2.9408 | Zhao -> Korean ✗ (Chinese)
+  2500  25% (9s) Loss: 2.8531 | Ustynyuk -> Korean ✗ (Russian)
+  3000  30% (11s) Loss: 2.9441 | Cham -> Korean ✗ (Arabic)
+  3500  35% (13s) Loss: 2.9149 | Thach -> Korean ✗ (Vietnamese)
+  4000  40% (15s) Loss: 2.8578 | Fonseca -> Czech ✗ (Portuguese)
+  4500  45% (17s) Loss: 2.9234 | Aida -> Greek ✗ (Japanese)
+  5000  50% (19s) Loss: 2.9369 | Han -> Greek ✗ (Vietnamese)
+  5500  55% (20s) Loss: 2.9198 | Bithell -> Greek ✗ (English)
+  6000  60% (22s) Loss: 2.9343 | Nagasawa -> Italian ✗ (Japanese)
+  6500  65% (24s) Loss: 2.8842 | Zamorano -> Italian ✗ (Spanish)
+  7000  70% (26s) Loss: 2.9190 | Cameron -> Italian ✗ (Scottish)
+  7500  75% (28s) Loss: 2.8068 | Lagomarsino -> Polish ✗ (Italian)
+  8000  80% (30s) Loss: 2.9025 | Fabian -> Greek ✗ (French)
+  8500  85% (31s) Loss: 2.9478 | Lam -> Greek ✗ (Vietnamese)
+  9000  90% (33s) Loss: 2.8803 | Asghar -> Portuguese ✗ (Arabic)
+  9500  95% (35s) Loss: 2.8091 | Hosokaya -> Portuguese ✗ (Japanese)
+ 10000 100% (37s) Loss: 2.7987 | Spencer -> Portuguese ✗ (English)
+
+Generating final evaluation plots...
+损失图表已保存至: fig/rnn/surname_lstm/loss.png
+混淆矩阵已保存至: fig/rnn/surname_lstm/confusion_matrix.png
+Plots saved to fig/rnn/surname_lstm

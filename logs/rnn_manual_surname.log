@@ -1,0 +1,33 @@
+Using device: cuda
+
+Training model: RNN
+ManualRNN(
+  (i2h): Linear(in_features=185, out_features=128, bias=True)
+  (i2o): Linear(in_features=185, out_features=18, bias=True)
+  (log_softmax): LogSoftmax(dim=1)
+)
+   500   5% (3s) Loss: 2.9106 | Saliba -> Japanese ✗ (Arabic)
+  1000  10% (5s) Loss: 2.9080 | De palma -> Arabic ✗ (Italian)
+  1500  15% (6s) Loss: 2.7267 | Linden -> Irish ✗ (English)
+  2000  20% (7s) Loss: 2.7742 | Fakhoury -> English ✗ (Arabic)
+  2500  25% (10s) Loss: 2.6628 | Hwang -> Korean ✓
+  3000  30% (12s) Loss: 2.6539 | Busto -> Portuguese ✗ (Spanish)
+  3500  35% (14s) Loss: 2.8429 | Macon -> Irish ✗ (French)
+  4000  40% (17s) Loss: 2.7969 | Martz -> Spanish ✗ (German)
+  4500  45% (19s) Loss: 2.0847 | Mentis -> Greek ✓
+  5000  50% (21s) Loss: 3.0479 | Oliver -> English ✗ (Spanish)
+  5500  55% (23s) Loss: 2.7509 | Krauss -> Greek ✗ (German)
+  6000  60% (26s) Loss: 2.2700 | Guerra -> Portuguese ✓
+  6500  65% (28s) Loss: 3.3540 | King -> Chinese ✗ (Scottish)
+  7000  70% (30s) Loss: 1.8906 | So -> Korean ✓
+  7500  75% (33s) Loss: 2.8691 | Isa -> Chinese ✗ (Arabic)
+  8000  80% (35s) Loss: 2.6164 | Berger -> English ✗ (French)
+  8500  85% (37s) Loss: 2.4139 | Sneijders -> Greek ✗ (Dutch)
+  9000  90% (40s) Loss: 1.5801 | Nosaka -> Japanese ✓
+  9500  95% (42s) Loss: 2.9553 | Giolla -> Spanish ✗ (Irish)
+ 10000 100% (44s) Loss: 1.5401 | Bing -> Vietnamese ✗ (Chinese)
+
+Generating final evaluation plots...
+损失图表已保存至: fig/rnn/surname_manual_rnn/loss.png
+混淆矩阵已保存至: fig/rnn/surname_manual_rnn/confusion_matrix.png
+Plots saved to fig/rnn/surname_manual_rnn
