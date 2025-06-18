@@ -77,11 +77,24 @@ def plot_loss(loss_history: List[float], save_path: str, title: str = "模型训
     print(f"损失图表已保存至: {save_path}")
 
 def plot_confusion_matrix(
-    cm: np.ndarray,
+    cm: torch.Tensor,
     class_names: List[str],
     save_path: str,
     title: str = "混淆矩阵",
+    normalize: bool = False,
 ):
+    """
+    This function prints and plots the confusion matrix.
+    Normalization can be applied by setting `normalize=True`.
+    """
+    if normalize:
+        cm = cm.numpy()
+        cm = cm.astype('float') / cm.sum(axis=1)[:, np.newaxis]
+        print("Normalized confusion matrix")
+    else:
+        cm = cm.numpy()
+        print('Confusion matrix, without normalization')
+
     save_dir = os.path.dirname(save_path)
     if not os.path.exists(save_dir):
         os.makedirs(save_dir)

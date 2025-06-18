@@ -1,33 +1,80 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/root/data-tmp/dl/src/rnn/train.py", line 299, in <module>
+    main() 
+    ^^^^^^
+  File "/root/data-tmp/dl/src/rnn/train.py", line 283, in main
+    output, hidden = model(line_tensor[j], hidden)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/data-tmp/miniconda3/envs/llm/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/data-tmp/miniconda3/envs/llm/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/data-tmp/dl/src/rnn/models/manual_rnn.py", line 17, in forward
+    combined = torch.cat((input_tensor, hidden_tensor), 1)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Expected all tensors to be on the same device, but found at least two devices, cuda:0 and cpu! (when checking argument for argument tensors in method wrapper_CUDA_cat)
 Using device: cuda
 
-Training model: RNN
+Training model: MANUAL_RNN with gradient accumulation on cuda
 ManualRNN(
   (i2h): Linear(in_features=185, out_features=128, bias=True)
   (i2o): Linear(in_features=185, out_features=18, bias=True)
   (log_softmax): LogSoftmax(dim=1)
 )
-   500   5% (3s) Loss: 2.9106 | Saliba -> Japanese ✗ (Arabic)
-  1000  10% (5s) Loss: 2.9080 | De palma -> Arabic ✗ (Italian)
-  1500  15% (6s) Loss: 2.7267 | Linden -> Irish ✗ (English)
-  2000  20% (7s) Loss: 2.7742 | Fakhoury -> English ✗ (Arabic)
-  2500  25% (10s) Loss: 2.6628 | Hwang -> Korean ✓
-  3000  30% (12s) Loss: 2.6539 | Busto -> Portuguese ✗ (Spanish)
-  3500  35% (14s) Loss: 2.8429 | Macon -> Irish ✗ (French)
-  4000  40% (17s) Loss: 2.7969 | Martz -> Spanish ✗ (German)
-  4500  45% (19s) Loss: 2.0847 | Mentis -> Greek ✓
-  5000  50% (21s) Loss: 3.0479 | Oliver -> English ✗ (Spanish)
-  5500  55% (23s) Loss: 2.7509 | Krauss -> Greek ✗ (German)
-  6000  60% (26s) Loss: 2.2700 | Guerra -> Portuguese ✓
-  6500  65% (28s) Loss: 3.3540 | King -> Chinese ✗ (Scottish)
-  7000  70% (30s) Loss: 1.8906 | So -> Korean ✓
-  7500  75% (33s) Loss: 2.8691 | Isa -> Chinese ✗ (Arabic)
-  8000  80% (35s) Loss: 2.6164 | Berger -> English ✗ (French)
-  8500  85% (37s) Loss: 2.4139 | Sneijders -> Greek ✗ (Dutch)
-  9000  90% (40s) Loss: 1.5801 | Nosaka -> Japanese ✓
-  9500  95% (42s) Loss: 2.9553 | Giolla -> Spanish ✗ (Irish)
- 10000 100% (44s) Loss: 1.5401 | Bing -> Vietnamese ✗ (Chinese)
+  4000   4% (20s) Loss: 2.8800 | Czajkowski -> Italian ✗ (Polish)
+Validation @ 4000: Train Loss: 2.8810, Val Loss: 2.8660, Accuracy: 5.30%
+  8000   8% (36s) Loss: 2.8814 | Ku -> Italian ✗ (Korean)
+Validation @ 8000: Train Loss: 2.8416, Val Loss: 2.7962, Accuracy: 9.20%
+ 12000  12% (57s) Loss: 2.7460 | Vargas -> Irish ✗ (Portuguese)
+Validation @ 12000: Train Loss: 2.7506, Val Loss: 2.7255, Accuracy: 16.70%
+ 16000  16% (78s) Loss: 2.5841 | Ogterop -> Italian ✗ (Dutch)
+Validation @ 16000: Train Loss: 2.6774, Val Loss: 2.6313, Accuracy: 19.90%
+ 20000  20% (99s) Loss: 2.7036 | Roijakker -> Polish ✗ (Dutch)
+Validation @ 20000: Train Loss: 2.6024, Val Loss: 2.5707, Accuracy: 18.10%
+ 24000  24% (120s) Loss: 2.8157 | Rios -> Korean ✗ (Portuguese)
+Validation @ 24000: Train Loss: 2.5438, Val Loss: 2.4934, Accuracy: 20.10%
+ 28000  28% (141s) Loss: 2.5028 | Torres -> Arabic ✗ (English)
+Validation @ 28000: Train Loss: 2.4972, Val Loss: 2.4603, Accuracy: 20.80%
+ 32000  32% (162s) Loss: 2.6873 | Rubio -> Arabic ✗ (Spanish)
+Validation @ 32000: Train Loss: 2.4414, Val Loss: 2.4061, Accuracy: 24.20%
+ 36000  36% (183s) Loss: 2.5467 | Salvage -> Japanese ✗ (French)
+Validation @ 36000: Train Loss: 2.4070, Val Loss: 2.3586, Accuracy: 24.60%
+ 40000  40% (204s) Loss: 1.6756 | Cao -> Chinese ✗ (Vietnamese)
+Validation @ 40000: Train Loss: 2.3687, Val Loss: 2.3632, Accuracy: 24.30%
+ 44000  44% (225s) Loss: 1.4913 | Hasimoto -> Japanese ✓
+Validation @ 44000: Train Loss: 2.3175, Val Loss: 2.3022, Accuracy: 25.90%
+ 48000  48% (245s) Loss: 2.2791 | Salvaggi -> Polish ✗ (Italian)
+Validation @ 48000: Train Loss: 2.2992, Val Loss: 2.2520, Accuracy: 29.40%
+ 52000  52% (266s) Loss: 1.6829 | Batsakis -> Russian ✗ (Greek)
+Validation @ 52000: Train Loss: 2.2542, Val Loss: 2.2600, Accuracy: 28.00%
+ 56000  56% (287s) Loss: 2.2297 | Ma -> Korean ✗ (Vietnamese)
+Validation @ 56000: Train Loss: 2.2157, Val Loss: 2.1847, Accuracy: 33.40%
+ 60000  60% (308s) Loss: 2.6619 | Mayer -> Arabic ✗ (Czech)
+Validation @ 60000: Train Loss: 2.2078, Val Loss: 2.1765, Accuracy: 35.30%
+ 64000  64% (323s) Loss: 2.0704 | Agrioli -> Italian ✓
+Validation @ 64000: Train Loss: 2.1651, Val Loss: 2.1219, Accuracy: 35.20%
+ 68000  68% (331s) Loss: 1.8491 | Kim -> Chinese ✗ (Vietnamese)
+Validation @ 68000: Train Loss: 2.1260, Val Loss: 2.1176, Accuracy: 36.30%
+ 72000  72% (339s) Loss: 0.8358 | Yamabe -> Japanese ✓
+Validation @ 72000: Train Loss: 2.1251, Val Loss: 2.1074, Accuracy: 34.40%
+ 76000  76% (354s) Loss: 2.4423 | Rios -> Korean ✗ (Portuguese)
+Validation @ 76000: Train Loss: 2.0702, Val Loss: 2.0776, Accuracy: 36.60%
+ 80000  80% (375s) Loss: 1.8274 | Prosdocimi -> Greek ✗ (Italian)
+Validation @ 80000: Train Loss: 2.0564, Val Loss: 2.0362, Accuracy: 37.00%
+ 84000  84% (395s) Loss: 2.6856 | Paul -> Vietnamese ✗ (German)
+Validation @ 84000: Train Loss: 2.0186, Val Loss: 1.9512, Accuracy: 40.80%
+ 88000  88% (416s) Loss: 1.1340 | Bahar -> Arabic ✓
+Validation @ 88000: Train Loss: 2.0071, Val Loss: 1.9722, Accuracy: 37.80%
+ 92000  92% (437s) Loss: 2.4649 | Garner -> German ✗ (English)
+Validation @ 92000: Train Loss: 1.9815, Val Loss: 1.9471, Accuracy: 39.50%
+ 96000  96% (458s) Loss: 0.2487 | Higashikuni -> Japanese ✓
+Validation @ 96000: Train Loss: 1.9233, Val Loss: 1.9230, Accuracy: 39.90%
+100000 100% (479s) Loss: 2.6957 | Borde -> Portuguese ✗ (French)
+Validation @ 100000: Train Loss: 1.9208, Val Loss: 1.8993, Accuracy: 43.70%
 
 Generating final evaluation plots...
-损失图表已保存至: fig/rnn/surname_manual_rnn/loss.png
-混淆矩阵已保存至: fig/rnn/surname_manual_rnn/confusion_matrix.png
-Plots saved to fig/rnn/surname_manual_rnn
+性能图表已保存至: fig/rnn/surname_manual_rnn/performance_surname_manual_rnn.png
